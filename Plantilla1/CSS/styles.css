@@ -59,10 +59,7 @@ header, section, footer{
 }
   
 header, footer{
-    top:0;
-    bottom:0;
-    left:10px;
-    right:10px;
+
 }
 
 header, section{
@@ -107,9 +104,6 @@ nav{
 	/* Es para la transparencia en la barra de navegacion pero creo que no la usare
 	opacity: 0.8;
 	filter:alpha(opacity=80); /* For IE8 and earlier */	
-	
-	/* No ira el margen a la derecha 
-	margin:  0 -3px -3px 0; */
 	
 	-moz-border-radius: 0 0 25px 0;
 	-webkit-border-radius: 0 0 25px 0;
@@ -170,6 +164,7 @@ aside{
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);
 }
 
+/* No se está invocando por ahora, es para darle transparencia pero genera conflictos con el texto */
 .transparencia2{	
 	opacity: 0.8;
 	filter:alpha(opacity=80); /* For IE8 and earlier */
