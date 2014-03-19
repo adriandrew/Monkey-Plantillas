@@ -1,0 +1,61 @@
+
+	<a href="#modal" class="btn go"><div id="humanstxt" class="flotarDerecha"></div></a>
+
+<!-- Inicia div de ventana emergente de HTML5 -->
+<div id="modal">
+		<div class="modal-content">
+			<div class="header">
+				<h2>Monkey Inc. Todos los Derechos Reservados.</h2>
+			</div>
+			<div class="copy">
+				<p>/* TEAM */
+                            
+Desarrollador: Aldo Adrian Andrew Lopez.
+                            
+Site: aaandrewlopez@gmail.com, enlace a formulario de contacto,...
+                            
+Twitter: adriandrew91.
+                            
+Location: Culiacan, Sinaloa, Mexico.
+                         
+                 
+                        [...]
+
+							
+/* THANKS */
+							
+Name: Todos los que hicieron posible este proyecto, los Monkeys! 
+
+                 
+                        [...]                        
+
+                            
+/* SITE */
+                            
+Last update: 11/03/2014
+                            
+Standards: HTML5, CSS3,..
+                            
+Components: Modernizr, jQuery, etc.
+                            
+Software: Visual Studio, Sublime Text 3.</p>
+			</div>
+			<div class="cf footer">
+				<a href="#" class="btn">Close</a>
+			</div>
+		</div>
+		<div class="overlay"></div>
+</div> <!-- end #modal -->
+
+
+
+
+.btn{
+	text-decoration: none;
+	border: 1px solid gray;
+	border-radius: 15px;
+	text-align: center;
+	color: gray;
+	margin-top: -10px;
+	padding: 3px 15px;
+}
