@@ -177,14 +177,14 @@ aside{
 
 #logoEmpresa{
 	height: 150px;
-	width: 17.62%;	/* 219px para ser exactos*/
+	width: 16.5%;	/* 219px para ser exactos*/
 	margin: -3px 0 -3px -3px;
 	background-image: url("../Images/monkey3.jpg");
 	background-color: black;
 }
 
 #derechaLogo{
-	width: 82%;
+	width: 83.2%;
 	height: 100%;
 
 	/* Esto era ideal para ajustar el ancho de diferentes dimensiones
