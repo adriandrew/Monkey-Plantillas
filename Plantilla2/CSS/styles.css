@@ -1,5 +1,5 @@
 body{
-	background: #1c1c1c url("../Images/fondo7.gif");
+	background: #1c1c1c url("../Images/fondo.png");
 		
 	/* Para que solo aparezca la imagen expandida al 100%
 	background-size: 100%;*/
@@ -22,39 +22,12 @@ p, ul, h1, h2, h3, h4{
 }
 
 header, section, footer, #logoEmpresa{
-	/* Para bordes en negro elegante
-	border: solid 3px #1D1F21;*/
-
-	/*Para border grises en toda la pagina*/
-	border: solid 3px gray;
+	/*Para border grises en toda la pagina en negro elegante*/
+	border: solid 3px #1D1F21;
 }	
 
 header, section, footer{		
-	-moz-border-radius: 15px 55px 5px;
-	-webkit-border-radius: 15px 55px 5px;
-	-webkit-linear-border-radius: 15px 55px 5px;
-	-o-linear-border-radius: 15px 55px 5px;
-	-ms-linear-border-radius: 15px 55px 5px;
 	
-	/* Pruebas para los bordes en IE en el servidor web 
-	(no funciona localmente, en el servidor SI!) */
-	linear-border-radius: 15px 55px 5px;
-	border-radius: 15px 55px 5px;
-	behavior: url(../JS/PIE1/PIE.htc);
-		/* no aplica contenidos */
-    content:"";
-                /* posiciona la sombra por detras de la caja */
-    z-index:-1;
-                /* aplica una sombra centrada con un gris oscuro y 20px de difuminado */    
-    -moz-box-shadow:0 0 15px white;
-    -webkit-box-shadow:0 0 15px white;
-    -webkit-linear-box-shadow:0 0 15px white;
-    -o-linear-box-shadow:0 0 15px white;
-    -ms-linear-box-shadow:0 0 15px white;
-    linear-box-shadow:0 0 15px white;
-    box-shadow:0 0 15px white;
-                /* centra verticalmente y separa la sombra de los bordes izquierdo y derecho */
-
 	color: #6e6e6e;
 }
   
@@ -70,8 +43,7 @@ section, footer{
 	background-color: white;
 	padding: 5px 20px;
 
-	/* Para bordes en negro elegante*/
-	border: solid 3px #1D1F21;
+	
 }
 
 header, #logoEmpresa{
