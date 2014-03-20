@@ -22,12 +22,12 @@ p, ul, h1, h2, h3, h4{
 }
 
 header, section, footer, #logoEmpresa{
-	/*Para border grises en toda la pagina en negro elegante*/
-	border: solid 3px #1D1F21;
+	/*Para border en toda la pagina en negro elegante*/
+	border: solid 3px gray;
 }	
 
 header, section, footer{		
-	
+	width:100%;
 	color: #6e6e6e;
 }
   
@@ -40,24 +40,10 @@ header, section{
 }
 
 section, footer{
-	background-color: white;
-	padding: 5px 20px;
-
-	
 }
 
 header, #logoEmpresa{
-	-moz-border-radius:25px;
-	-webkit-border-radius: 25px;
-	-webkit-linear-border-radius: 25px;
-	-o-linear-border-radius: 25px;
-	-ms-linear-border-radius: 25px;
 	
-	/* Pruebas para los bordes en IE en el servidor web 
-	(no funciona localmente, en el servidor SI!) */
-	linear-border-radius: 25px;
-	border-radius: 25px;
-	behavior: url(../JS/PIE1/PIE.htc);
 }
 
 header{	
@@ -91,12 +77,13 @@ nav{
 }
 
 section{ 
-	width: auto;
-	height: 300px;
-	font-size: 20px;	 
+	clear: both;
+	width: 100%;
+	height: 550px;
 }
 
 footer{
+	clear: both;
 	width: auto;
 	height: 128px;
 	font-size: 13px;
@@ -115,8 +102,22 @@ footer ul li {
 
 aside{
 	float: left;
-	width: 50%;
+	width: 100%;
 	height: auto;
+}
+
+#sectionIzquierda{
+	float: left;
+	width: 80%;
+	height: 300px;
+	font-size: 20px;	 
+}
+
+#sectionDerecha{
+	float: right;
+	width: 19%;
+	height: auto;
+	clear: right;
 }
 
 .flotarIzquierda{
@@ -143,15 +144,20 @@ aside{
 }
 
 #logoEmpresa{
-	height: 150px;
-	width: 16.5%;	/* 219px para ser exactos*/
-	margin: -3px 0 -3px -3px;
-	background-image: url("../Images/monkey3.jpg");
-	background-color: black;
+	background-image: url("../Images/fut.jpg");	
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 220px;
+	height: 220px;
+	-moz-border-radius:110px;
+	-webkit-border-radius:110px;
+	-webkit-linear-border-radius:110px;
+	-o-linear-border-radius:110px;
+	-ms-linear-border-radius:110px;
 }
 
 #derechaLogo{
-	width: 83.2%;
+	width: 80%;
 	height: 100%;
 
 	/* Esto era ideal para ajustar el ancho de diferentes dimensiones
@@ -206,4 +212,17 @@ aside{
 	width: 128px;
 	height: 128px;
 	background-image: url("../Images/sqlServer.png");	
+}
+
+#circulo{
+	background-image: url("../Images/monkey3.jpg");	
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 128px;
+	height: 128px;
+	-moz-border-radius:64px;
+	-webkit-border-radius:64px;
+	-webkit-linear-border-radius:64px;
+	-o-linear-border-radius:64px;
+	-ms-linear-border-radius:64px;
 }
