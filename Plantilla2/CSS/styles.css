@@ -15,6 +15,14 @@ h1{
 	
 }
 
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+}
+
 p, ul, h1, h2, h3, h4{
 	padding: 0;
 	margin: 0;
@@ -23,7 +31,7 @@ p, ul, h1, h2, h3, h4{
 
 header, section, footer, #logoEmpresa{
 	/*Para border en toda la pagina en negro elegante*/
-	border: solid 3px gray;
+	border: solid 2px gray;
 }	
 
 header, section, footer{		
@@ -56,11 +64,15 @@ header{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;	
 	color: white;	
 	background: none;
+	border-bottom: 20px;
 }
 
 nav{
 	height: 30%;
-	background-color: #1D1F21;
+	background-color: rgb(71, 17, 17);
+
+	/*negro grisaceo elegante
+	background-color: #1D1F21;*/
 }
 
 nav, #arribaNav{
@@ -76,21 +88,23 @@ nav ul li{
 	height: 100%;
 	float: left;
 	text-align: center;
-	list-style-type: none;
-	border: 1px solid white;
+	color: white;
+	font-weight: bolder;
+	font-size: 18px;
 }
 
 nav ul li:hover{
 	background-color: black;
+	height: 130%;
 }
 
 nav ul li a{
-	text-decoration: none;
 	display: block;
+
 }
 
-section{ 
-	height: 550px;
+#section{ 
+	height: 1000px;
 }
 
 footer{
@@ -106,7 +120,6 @@ footer ul{
 }
 
 footer ul li {
-	text-decoration: none;
 	margin-left: 30px; 
 }
 
@@ -114,20 +127,6 @@ aside{
 	float: left;
 	width: 100%;
 	height: auto;
-}
-
-#sectionIzquierda{
-	float: left;
-	width: 70%;
-	height: 300px;
-	font-size: 20px;	 
-}
-
-#sectionDerecha{
-	float: right;
-	width: 29%;
-	height: auto;
-	clear: right;
 }
 
 .flotarIzquierda{
@@ -177,8 +176,75 @@ aside{
     min-width: 230px;*/
 }
 
+#sectionIzquierda{
+	float: left;
+	width: 70%;
+	height: 300px;
+	font-size: 20px;	 
+}
+
+#sectionDerecha{
+	float: right;
+	width: 360px;
+	height: auto;
+	clear: right;
+}
+
+#sectionDerecha section{
+	margin-bottom: 30px;
+}
+
+#sectionDerecha1{
+	height: 300px;
+}
+
+#sectionDerecha1 a{
+	float: left;
+	background-color: rgb(28, 97, 80);
+	width: 49%;
+	height: 25%;
+	border: 1px solid white;
+}
+
+#sectionDerecha1 a:hover{
+	background-color: black;
+}
+
+#sectionDerecha2{
+	height: 200px;
+}
+
+#sectionDerecha2 a{
+	float: left;
+	background-color: rgb(110, 116, 42);
+	width: 11.9%;
+	height: 25%;
+	border: 1px solid white;
+}
+
+#sectionDerecha2 a:hover{
+	background-color: black;
+}
+
+#sectionDerecha3{
+	height: 100px;
+}
+
+#sectionDerecha3 a{
+	float: left;
+	background-color: rgb(67, 7, 75);
+	width: 24.4%;
+	height: 100%;
+	border: 1px solid white;
+}
+
+#sectionDerecha3 a:hover{
+	background-color: black;
+}
+
 #arribaNav{
 	height: 70%;
+	background-color: rgba(31, 0, 0, 1);
 }
 
 #humanstxt{
