@@ -27,7 +27,7 @@ header, section, footer, #logoEmpresa{
 }	
 
 header, section, footer{		
-	width:100%;
+	width:auto;
 	color: #6e6e6e;
 }
   
@@ -36,18 +36,22 @@ header, footer{
 }
 
 header, section{
-	margin-bottom: 20px;
+
 }
 
 section, footer{
+
 }
 
 header, #logoEmpresa{
 	
 }
 
+header, #derechaLogo{
+	z-index: 1;
+}
+
 header{	
-	width: auto;
 	height: 150px;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;	
 	color: white;	
@@ -55,36 +59,42 @@ header{
 }
 
 nav{
-	width: auto;
 	height: 30%;
 	background-color: #1D1F21;
+}
 
-	/* Es para la transparencia en la barra de navegacion pero creo que no la usare
-	opacity: 0.8;
-	filter:alpha(opacity=80); /* For IE8 and earlier */	
-	
-	-moz-border-radius: 0 0 25px 0;
-	-webkit-border-radius: 0 0 25px 0;
-	-webkit-linear-border-radius: 0 0 25px 0;
-	-o-linear-border-radius: 0 0 25px 0;
-	-ms-linear-border-radius: 0 0 25px 0;
-	
-	/* Pruebas para los bordes en IE en el servidor web 
-	(no funciona localmente, en el servidor SI!) */
-	linear-border-radius: 0 0 25px 0;
-	border-radius: 0 0 25px 0;
-	behavior: url(../JS/PIE1/PIE.htc);
+nav, #arribaNav{
+	padding-left: 235px;
+}
+
+nav ul{
+	height: 100%;
+}
+
+nav ul li{
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	list-style-type: none;
+	border: 1px solid white;
+}
+
+nav ul li:hover{
+	background-color: black;
+}
+
+nav ul li a{
+	text-decoration: none;
+	display: block;
 }
 
 section{ 
-	clear: both;
-	width: 100%;
 	height: 550px;
 }
 
 footer{
 	clear: both;
-	width: auto;
 	height: 128px;
 	font-size: 13px;
 	font-weight: bold;	
@@ -108,14 +118,14 @@ aside{
 
 #sectionIzquierda{
 	float: left;
-	width: 80%;
+	width: 70%;
 	height: 300px;
 	font-size: 20px;	 
 }
 
 #sectionDerecha{
 	float: right;
-	width: 19%;
+	width: 29%;
 	height: auto;
 	clear: right;
 }
@@ -154,10 +164,11 @@ aside{
 	-webkit-linear-border-radius:110px;
 	-o-linear-border-radius:110px;
 	-ms-linear-border-radius:110px;
+	position: absolute;
+	z-index: 2;
 }
 
 #derechaLogo{
-	width: 80%;
 	height: 100%;
 
 	/* Esto era ideal para ajustar el ancho de diferentes dimensiones
@@ -167,21 +178,7 @@ aside{
 }
 
 #arribaNav{
-	width: auto;
 	height: 70%;
-	padding-left: 5px;
-
-	-moz-border-radius: 0 25px 0 0;
-	-webkit-border-radius: 0 25px 0 0;
-	-webkit-linear-border-radius: 0 25px 0 0;
-	-o-linear-border-radius: 0 25px 0 0;
-	-ms-linear-border-radius: 0 25px 0 0;
-	
-	/* Pruebas para los bordes en IE en el servidor web 
-	(no funciona localmente, en el servidor SI!) */
-	linear-border-radius: 0 25px 0 0;
-	border-radius: 0 25px 0 0;
-	behavior: url(../JS/PIE1/PIE.htc);
 }
 
 #humanstxt{
