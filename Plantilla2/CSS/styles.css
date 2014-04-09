@@ -1,8 +1,13 @@
 body{
-	background: #1c1c1c url("../Images/fondo.png");
-		
+	/* Para que tenga la imagen de las tablas grises.
+	background: #1c1c1c url("../Images/fondo.png");	
+	*/
+
 	/* Para que solo aparezca la imagen expandida al 100%
-	background-size: 100%;*/
+	background-size: 100%;
+	*/
+
+	background: #1c1c1c;	
 	margin-top: -1px;
 }
 
@@ -31,7 +36,7 @@ li{
 
 nav li:hover, section li:hover{
 	/* Para efectos de prueba solamente */
-	background-color: gray !important;
+	background-color: #9E682A !important;
 }
 
 section ul li {
@@ -88,6 +93,7 @@ header{
 
 nav{
 	height: 30%;
+	background-color: black;
 	
 	/*negro grisaceo elegante
 	background-color: #1D1F21;*/
@@ -98,8 +104,11 @@ nav, #headerBarra{
 }
 
 nav, nav ul#menu li ul {
-	/* Gris con transparencia */
+	/* Gris con transparencia 
 	background-color: rgba(77, 76, 76, 0.56);
+	*/
+
+
 }
 
 
@@ -235,9 +244,13 @@ nav ul#menu li, nav ul#menu li a{
 }
 
 nav ul#menu li {
-	width: 25%;
+	width: 24.7%;
 	height: 100%;
     float: left;
+
+	margin-left: 3px;
+    /* Gris del menu de iswug.net*/
+	background-color: #292520
 }
    
 nav ul#menu li:hover{
@@ -307,10 +320,12 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 
 #sectionContenido{
 	float: left;
-	width: 70%;
+	width: 65%;
 	min-height: 1300px;
 	font-size: 25px;
 	background-color: white;
+
+	padding: 65px 30px 30px 30px ;
 }
 
 /* Section Sidebar */
@@ -330,7 +345,7 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 }
 
 #ligas ul li{
-	width: 49%;
+	width: 50%;
 	height: 25%;
 	background-color: black;	
 }
@@ -348,7 +363,7 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 }
 
 #topicos ul li {
-	width: 49%;
+	width: 50%;
 	height: 25%;
 	background-color: black;
 }
