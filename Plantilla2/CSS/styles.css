@@ -304,13 +304,15 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 
 /* Section Equipos */
 #sectionEquipos{
-	height: 300px;
-	display: none;
+	width: 82.2%;
+	height: 50px;
+    float: right;
+	
 }
 
 #sectionEquipos ul li{
-	width: 10%;
-	height: 50%;
+	width: 5.5%;
+	height: 100%;
 }
 
 #sectionEquipos ul li a{
@@ -356,6 +358,11 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 
 #ligas ul li:hover, #topicos ul li:hover, #masVotado ul li:hover{
 	
+}
+
+#ligas ul li a:hover, #topicos ul li a:hover, #masVotado ul li a:hover{
+	opacity: 50%;
+	background-color: red !important;
 }
 
 #topicos{
@@ -434,16 +441,12 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 	background-image: url("../Images/Equipos/chiapas.png");	
 }
 
-#chivas{
-	background-image: url("../Images/Equipos/chivas.png");	
-}
-
-#cholos{
-	background-image: url("../Images/Equipos/cholos.png");	
-}
-
 #cruzAzul{
 	background-image: url("../Images/Equipos/cruzAzul.png");	
+}
+
+#guadalajara{
+	background-image: url("../Images/Equipos/guadalajara.png");	
 }
 
 #leon{
@@ -480,6 +483,9 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 
 #tigres{
 	background-image: url("../Images/Equipos/tigres.png");	
+}
+#tijuana{
+	background-image: url("../Images/Equipos/tijuana.png");	
 }
 
 #toluca{
@@ -529,6 +535,31 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 }
 
 /* ---------------------------- Termina RedesSociales -------------------------- */
+
+/*------------------------------Competiciones------------------------------*/
+
+#champions{
+	background-image: url("../Images/Ligas/LogoUEFA.png");
+}
+
+#española{	
+	background-image: url("../Images/ligas/LogoEspañola.png");
+}
+
+#libertadores{
+	background-image: url("../images/ligas/LogoLibertadores.png");
+}
+
+
+#mexicana{
+	background-image: url("../images/ligas/LogoMexico.png");
+}
+
+#premier{
+background-image: url("../images/ligas/LogoPremier.png");
+}
+
+/*------------------------------Competiciones------------------------------*/
 
 
 /* ---------------------------- Tecnologias -------------------------- */
