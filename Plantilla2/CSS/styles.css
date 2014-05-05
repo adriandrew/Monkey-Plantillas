@@ -12,7 +12,7 @@ body{
 }
 
 /* Nuevas etiquetas de HTML5 para que se muestren bien en IE */
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
 	display: block;
 }
 
@@ -203,7 +203,7 @@ aside{
 
 /* ---------------------------- Header -------------------------- */
 #headerContenido{
-	width: 1145px;
+	width: 1055px;
 	height: 100%;
 	float: right;
 }
@@ -313,7 +313,7 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 
 /* Section Equipos */
 #sectionEquipos{
-	width: 1145px;
+	width: 1055px;
 	height: 50px;
     float: right;
 }
@@ -350,7 +350,7 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 
 #sectionContenido{
 	float: left;
-	width: 734px;
+	width: 644px;
 	min-height: 1300px;
 	font-size: 25px;
 	background-color: white;
