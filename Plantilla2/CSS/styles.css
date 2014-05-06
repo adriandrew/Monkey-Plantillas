@@ -71,7 +71,7 @@ p, ul, h1, h2, h3, h4{
 	
 }
 
-#nav li:hover, #section li:hover{
+#navPrincipal li:hover, #section li:hover{
 	/* Para efectos de prueba solamente */
 	background-color: #9E682A !important;
 }
@@ -130,8 +130,8 @@ p, ul, h1, h2, h3, h4{
 /* ---------------------------- Termina Header -------------------------- */
 
 
-/* ---------------------------- Nav -------------------------- */
-#nav{
+/* ---------------------------- NavPrincipal -------------------------- */
+#navPrincipal{
 	height: 30%;
 	background-color: black;
 	
@@ -139,29 +139,29 @@ p, ul, h1, h2, h3, h4{
 	background-color: #1D1F21;*/
 }
 
-#nav, #nav ul#menu li ul {
+#navPrincipal, #navPrincipal ul#menu li ul {
 	/* Gris con transparencia 
 	background-color: rgba(77, 76, 76, 0.56);
 	*/
 }
 
 /* Menu y Submenu */
-#nav ul li:hover{
+#navPrincipal ul li:hover{
 
 }
 /* Termina Menu y Submenu */
 
 
 /* Menu */
-#nav ul#menu {
+#navPrincipal ul#menu {
 	height: 100%;
 }
  
-#nav ul#menu li, #nav ul#menu li a{	
+#navPrincipal ul#menu li, #navPrincipal ul#menu li a{	
  text-align: center;
 }
 
-#nav ul#menu li {
+#navPrincipal ul#menu li {
 	width: 24.77%;
 	height: 100%;
     float: left;
@@ -171,15 +171,15 @@ p, ul, h1, h2, h3, h4{
 	background-color: #292520
 }
 
-#nav ul#menu li:first-child {
+#navPrincipal ul#menu li:first-child {
 	margin-left: 0;
 }
    
-#nav ul#menu li:hover{
+#navPrincipal ul#menu li:hover{
  	color: #aaa073;
 }
 
-#nav ul#menu li a{
+#navPrincipal ul#menu li a{
 	color: white;
 	display: block;
 }
@@ -187,7 +187,7 @@ p, ul, h1, h2, h3, h4{
    
 
 /* Submenu */
-#nav ul#menu ul {
+#navPrincipal ul#menu ul {
  display: none;
  position: absolute;
  color: #fff;
@@ -195,16 +195,16 @@ p, ul, h1, h2, h3, h4{
  margin: 0;
  }
    
-#nav ul#menu ul li{
+#navPrincipal ul#menu ul li{
  width:100%;
  margin:2% 0%;
 }  
   
-#nav ul#menu ul li a{
+#navPrincipal ul#menu ul li a{
  color: #fff;
 }
    
-#nav ul#menu ul li a:hover{
+#navPrincipal ul#menu ul li a:hover{
  color: #aaa073;
 }
    
@@ -218,7 +218,7 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
  cursor:pointer;
 }
 /* Termina Submenu */
-/* ------------------------- Termina Nav --------------------- */
+/* ------------------------- Termina NavPrincipal --------------------- */
 
 
 /* ---------------------------- Section -------------------------- */
@@ -237,22 +237,22 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 }
 
 
-/* Section Equipos */
-#sectionEquipos{
+/* Nav Equipos */
+#navEquipos{
 	width: 1055px;
 	height: 50px;
     float: right;
 }
 
-#sectionEquipos ul li{
+#navEquipos ul li{
 	width: 5.555%;
 	height: 100%;
 }
 
-#sectionEquipos ul li a{
+#navEquipos ul li a{
 	height: 100%;
 }
-/* Termina Section Equipos */
+/* Termina Nav Equipos */
 
 
 /* Section Sidebar Izquierda */
@@ -297,7 +297,7 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 	clear: right;
 }
 
-#sectionSidebarDerecha section{
+#sectionSidebarDerecha nav{
 	margin-bottom: 30px;
 }
 
@@ -305,47 +305,47 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 	
 }
 
-#ligas{
+#navLigas{
 	height: 300px;
 }
 
-#ligas ul li{
+#navLigas ul li{
 	width: 48.89%;
 	height: 23.9%;
 	border: 2px solid #6e6e6e;	
 }
 
-#ligas ul li:hover, #ligas ul li a:hover{
+#navLigas ul li:hover, #navLigas ul li a:hover{
 	background-color: black !important;	
 	opacity: .7;
 }
 
-#ligas ul li a, #masVotado ul li a{
+#navLigas ul li a, #navMasVotado ul li a{
 
 }
 
-#ligas ul li:hover, #topicos ul li:hover, #masVotado ul li:hover{
+#navLigas ul li:hover, #navTopicos ul li:hover, #navMasVotado ul li:hover{
 		
 }
 
-#ligas ul li a:hover, #topicos ul li a:hover, #masVotado ul li a:hover{
+#navLigas ul li a:hover, #navTopicos ul li a:hover, #navMasVotado ul li a:hover{
 
 }
 
-#topicos{
+#navTopicos{
 	height: 600px;
 }
 
-#topicos ul li {
+#navTopicos ul li {
 	width: 50%;
 	height: 25%;
 }
 
-#masVotado{
+#navMasVotado{
 	height: 300px;
 }
 
-#masVotado ul li{
+#navMasVotado ul li{
 	width: 100%;
 	height: 100%;
 }
