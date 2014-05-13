@@ -28,4 +28,3 @@ window.onload = function(){/*hace que se cargue la función lo que predetermina 
 
 muestra_oculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
 
-}

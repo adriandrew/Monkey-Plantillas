@@ -107,7 +107,11 @@ p, ul, h1, h2, h3, h4{
 }
 
 #headerContenido{
-	width: 1055px;
+	
+	/*MacBook
+	width: 1055px; */
+
+	width: 86%;
 	height: 100%;
 	float: right;
 }
@@ -239,7 +243,10 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 
 /* Nav Equipos */
 #navEquipos{
-	width: 1055px;
+	/* MacBook
+	width: 1055px; */
+
+	width: 86%;
 	height: 50px;
     float: right;
 }
@@ -279,7 +286,11 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 /* Section Contenido */
 #sectionContenido{
 	float: left;
-	width: 644px;
+	
+	/* MacBook
+	width: 644px; */
+
+	width: 55%;
 	min-height: 1300px;
 	font-size: 25px;
 	background-color: white;
