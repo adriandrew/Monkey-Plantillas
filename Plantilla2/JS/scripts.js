@@ -26,5 +26,6 @@ equipos.style.display = (equipos.style.display == 'none') ? 'block' : 'none'; //
 
 window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
 
-muestra_oculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
+MuestraOculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
 
+}
