@@ -415,6 +415,18 @@ aside{
 }
 /* ---------------------------- Termina Aside -------------------------- */
 
+/* ---------------------------- Audio -------------------------- */
+
+#audio{
+
+}
+
+#playlist,audio{background:#666;width:400px;padding:20px;}
+#playlist .active a, audio .active a{color:#5DB0E6;text-decoration:none;}
+#playlist li a, audio li a{color:#eeeedd;background:#333;padding:5px;display:block;}
+#playlist li a:hover, audio li a:hover{text-decoration:none;}
+
+/* ---------------------------- Termina Audio -------------------------- */
 
 .flotarIzquierda{
 	float: left;

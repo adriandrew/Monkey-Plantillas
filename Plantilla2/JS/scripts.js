@@ -1,20 +1,12 @@
 // alert("prueba");
-
-function Ocultar(obj) {
-
-    var equipos = document.getElementById(obj);
-
-        equipos.style.display = 'none';
-
-}
-
-
 function Cargada(id){
 
 	alert("prueba");
 
 }
 
+
+// Muestra Oculta
 function MuestraOculta(id){
 
 if (document.getElementById){ //se obtiene el id
@@ -29,3 +21,48 @@ window.onload = function(){/*hace que se cargue la función lo que predetermina 
 MuestraOculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
 
 }
+
+// Termina Muestra Oculta
+
+// Audio
+
+var audio;
+var playlist;
+var tracks;
+var current;
+
+init();
+function init(){
+    current = 0;
+    audio = $('audio');
+    playlist = $('#playlist');
+    tracks = playlist.find('li a');
+    len = tracks.length - 1;
+    audio[0].volume = .10;
+    audio[0].play();
+    playlist.find('a').click(function(e){
+        e.preventDefault();
+        link = $(this);
+        current = link.parent().index();
+        run(link, audio[0]);
+    });
+    audio[0].addEventListener('ended',function(e){
+        current++;
+        if(current == len){
+            current = 0;
+            link = playlist.find('a')[0];
+        }else{
+            link = playlist.find('a')[current];    
+        }
+        run($(link),audio[0]);
+    });
+}
+function run(link, player){
+        player.src = link.attr('href');
+        par = link.parent();
+        par.addClass('active').siblings().removeClass('active');
+        audio[0].load();
+        audio[0].play();
+}
+
+// Termina Audio
