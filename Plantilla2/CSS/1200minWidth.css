@@ -1,8 +1,16 @@
 @media (min-width: 1200px) {
 
 #sectionContenido {
-  width: 700px;
+  width: 650px;
+  margin: 0;
 }
 
-  
+#sectionSidebarDerecha{
+	width: 350px;
+}
+
+#navLigas ul li{
+	border: none;
+}
+
 }
