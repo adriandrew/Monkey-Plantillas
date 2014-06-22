@@ -116,7 +116,7 @@ p, ul, h1, h2, h3, h4{
 	/*MacBook
 	width: 1055px; */
 
-	width: 86%;
+	width: 1000px;
 	height: 100%;
 	float: right;
 }
@@ -251,7 +251,7 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 	/* MacBook
 	width: 1055px; */
 
-	width: 86%;
+	width: 1000px;
 	height: 50px;
     float: right;
 }
