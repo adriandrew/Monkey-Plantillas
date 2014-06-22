@@ -1,16 +1,13 @@
 @media (min-width: 1200px) {
 
 #sectionContenido {
-  width: 650px;
-  margin: 0;
+  width: 600px;
 }
 
 #sectionSidebarDerecha{
-	width: 350px;
 }
 
 #navLigas ul li{
-	border: none;
 }
 
 }

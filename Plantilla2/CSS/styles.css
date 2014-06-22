@@ -40,6 +40,11 @@ p, ul, h1, h2, h3, h4{
 	display: inline;
 }
 
+#principal{
+	margin: 0 auto;
+	width: 1200px;
+}
+
 #header, #section, #footer, #logo{
 	
 }	
@@ -264,10 +269,10 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 
 /* Section Sidebar Izquierda */
 #sectionSidebarIzquierda{
-	width: 180px;
+	width: 200px;
 	min-height: 1340px;
 	float: left;
-	margin-right: 10px;
+	margin-right: 25px;
 	clear: both;
 	background-color: black;
 }
@@ -290,22 +295,21 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 	/* MacBook
 	width: 644px; */
 
-	width: 55%;
+	width: 600px;
 	min-height: 1300px;
 	font-size: 25px;
 	background-color: white;
-	padding: 20px;
-	margin-right: 10px;
+	padding: 20px 25px;
+	margin-right: 25px;
 }
 /* Termina Section Contenido */
 
 
 /* Section Sidebar Derecha */
 #sectionSidebarDerecha{
-	float: right;
-	width: 359px;
+	float: left;
+	width: 300px;
 	height: auto;
-	clear: right;
 }
 
 #sectionSidebarDerecha nav{
@@ -321,9 +325,9 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 }
 
 #navLigas ul li{
-	width: 48.89%;
+	width: 145px;
 	height: 23.9%;
-	border: 2px solid #6e6e6e;	
+	border: 2.5px solid #6e6e6e;	
 }
 
 #navLigas ul li:hover, #navLigas ul li a:hover{
