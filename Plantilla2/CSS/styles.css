@@ -171,17 +171,17 @@ p, ul, h1, h2, h3, h4{
 }
 
 #navPrincipal ul#menu li {
-	width: 24.77%;
+	width: 244px;
 	height: 100%;
     float: left;
 
-	margin-left: 3px;
+	margin-left: 5px;
     /* Gris del menu de iswug.net*/
 	background-color: #292520
 }
 
 #navPrincipal ul#menu li:first-child {
-	margin-left: 0;
+	/* margin-left: 0; */
 }
    
 #navPrincipal ul#menu li:hover{
@@ -239,6 +239,10 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 	/* Ya soy pro, ya no los necesito ;)
 	border: 1px solid white;
 	*/
+}
+
+#sectionSidebarIzquierda, #sectionContenido, #sectionSidebarDerecha{
+	margin-bottom: 20px;
 }
 
 #sectionSidebarIzquierda li, #sectionSidebarDerecha li{
