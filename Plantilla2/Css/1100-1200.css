@@ -1,0 +1,31 @@
+@media (min-width: 1100px) and (max-width: 1200px) {
+
+#principal{
+	width: 1100px;
+}
+
+#logo{
+	width: 100px;
+}
+
+#headerContenido {
+	width: 975px;
+}
+
+#sectionSidebarIzquierda{
+	width: 100px;
+}
+
+#navPrincipal ul#menu li {
+	width: 237.35px;
+}
+
+#navEquipos {
+	width: 975px;
+}
+
+#header, #section, #footer{
+	color: green !important;
+}
+
+}
