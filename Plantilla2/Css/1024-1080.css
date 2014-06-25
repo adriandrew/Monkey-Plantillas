@@ -13,12 +13,18 @@
 }
 
 #sectionSidebarIzquierda{
-	width: 50px;
-	margin-right: 12px;
+	min-height: 100px;
+	width: 100%;
+	margin: 0 0 15px 0;
 }
 
 #sectionContenido{
-	margin-right: 12px;
+	margin-left: 25px;
+	margin-right: 24px;
+}
+
+#sectionSidebarDerecha{
+	margin-right: 25px;
 }
 
 #navPrincipal ul#menu li {

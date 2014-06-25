@@ -9,7 +9,13 @@
 }
 
 #sectionSidebarIzquierda{
-	display: none;
+	min-height: 100px;
+	width: 100%;
+	margin: 0 0 15px 0;
+}
+
+#sectionContenido{
+	margin-right: 10px;
 }
 
 #logo{
@@ -17,7 +23,7 @@
 }
 
 #navPrincipal ul#menu li {
-	width: 238.75px;
+	width: 233.75px;
 }
 
 #navEquipos {
