@@ -9,6 +9,7 @@ body{
 
 	background: #1c1c1c;	
 	margin-top: -1px;
+	overflow-y: hidden!important;
 }
 
 /* Nuevas etiquetas de HTML5 para que se muestren bien en IE */

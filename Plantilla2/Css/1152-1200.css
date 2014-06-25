@@ -1,11 +1,11 @@
-@media (min-width: 1100px) and (max-width: 1200px) {
+@media (min-width: 1152px) and (max-width: 1200px) {
 
 #principal{
-	width: 1100px;
+	width: 1152px;
 }
 
 #logo{
-	width: 100px;
+	width: 152px;
 }
 
 #headerContenido {
@@ -13,11 +13,11 @@
 }
 
 #sectionSidebarIzquierda{
-	width: 100px;
+	width: 152px;
 }
 
 #navPrincipal ul#menu li {
-	width: 237.35px;
+	width: 237.5px;
 }
 
 #navEquipos {
