@@ -15,7 +15,7 @@ function invocarJson() {
           dataType: "json",
           success: function(response) { 
           	//alert(response); 
-          	console.log(response); 
+          	//console.log(response); 
 			window.listadoI = response; 
 		  	inyectarListado(listadoI)
           },
@@ -29,7 +29,7 @@ function inyectarListado(listado) {
 
 	$.each(listado.items, function(clave, valor) {
 
-		$('#inyectar').append('<h1>"'+valor.nombre+'"</h1>');
+		$('#inyectar').append('<h2>"'+valor.nombre+'"</h2>');
 	
 	});
 
