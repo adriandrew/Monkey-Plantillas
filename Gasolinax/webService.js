@@ -10,37 +10,30 @@ function invocarJson() {
 	$.ajax({
           type: "POST",
           //url: "http://movil.iswug.net/insofnew/functions/services/searchInsof.php?tipo=movil_evento&callback=?",
-          url: "http://monkey.somee.com/searchInsof.php",
+          url: "http://monkey.somee.com/Gasolinax/preciosGasolinaMexico.php",
           data: "{}",
-          contentType: "application/json; charset=utf-8",
-          dataType: "json",
+          contentType: "application/jsonp; charset=utf-8",
+          dataType: "jsonp",
           success: function(response) { 
-               //alert("CORRECTO");
           	//alert(response); 
-          	console.log(response); 
 			window.listadoI = response; 
 		  	inyectarListado(listadoI)
 
-               console.log(listadoI)
+               //console.log(listadoI)
           },
           error: function(XMLHttpRequest, textStatus, Error) {
-          	alert(XMLHttpRequest, textStatus, Error);}
+          	console.log(XMLHttpRequest, textStatus, Error);
+          }
     });
 
 } //invocarJson
 
 function inyectarListado(listado) {
 
-//	$.each(listado.items, function(clave, valor) {
+     $.each(listado.preciosGasolina, function(clave, valor) {
 
-//		$('#inyectar').append('<h2>"'+valor.nombre+'"</h2>');
-	
-//	});
-
-     $.each(listado.precioDiesel, function(clave, valor) {
-
-          $('#inyectar').append('<h2>"'+valor.precioDiesel+'"</h2>');
+          $('#inyectar').append('<h2>"'+valor.importe+'"</h2>');
      
-     });     
+     }); 
 
 } //inyectarListado
