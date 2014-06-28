@@ -16,11 +16,66 @@ body{
 #principal{
 	width: auto;
 	height: 100%;
-	padding: 20px;
+	margin: 0 auto;
 	
 	/* border: 10px solid #730C01; 
 	border: 10px solid #1D0604;*/
 
 	margin: 0 auto;
+	padding: 20px;
 }
 
+#descripcion{
+
+}
+
+#descripcion h3{
+	text-align: center;
+}
+
+#navPrecios, #navPrecios ul{
+	padding: 0;
+}
+
+#navPrecios ul li{
+	width: auto;
+	background-color: black;
+	list-style: none;
+	margin: 10px 0;
+	padding: 15px;
+	border: 1px solid white;
+}
+
+#navPrecios ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#pesosLitros, #litrosPesos{
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#lblLitrosPesos, #lblPesosLitros{
+	width: 100%;	
+	display: block;
+}
+
+#txtPesosLitros, #txtLitrosPesos, #btnCalcularPesosLitros, #btnCalcularLitrosPesos{
+	width: 49%;
+}
+
+#txtPesosLitros, #txtLitrosPesos{
+	/* width: 49.3%; */
+	box-sizing: border-box;
+}
+
+#btnCalcularPesosLitros, #btnCalcularLitrosPesos{
+	/* width: 49.3%; */	
+	background-color: black;
+	color: white;
+}
