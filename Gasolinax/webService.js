@@ -1,12 +1,14 @@
+// Hay que calcular con variables.
+$(document).delegate('#Diesel', 'click', calcularDiesel);
+
 $(document).ready(
 
 	// Se llama a la funcion invocarJson.
-	invocarJson
+	//invocarJson
+
+  obtenerPrecios
 
 );
-
-// Hay que calcular con variables.
-$(document).delegate('#Diesel', 'click', calcularDiesel);
 
 function calcularDiesel() {
     //document.getElementById("Diesel").innerHTML = "YOU CLICKED ME!";
@@ -57,6 +59,36 @@ function inyectarListado(listado) {
 
           $('#navPrecios ul').append('<li><a href="calculos.html" id="'+valor.tipo+'">'+valor.tipo+' $'+valor.importe+'</a></li>');
      
+      var tipo = valor.tipo;
+      var importe = valor.importe;
+      localStorage.setItem(tipo, importe);
+
      }); 
 
 } //inyectarListado
+
+
+function guardarPrecios(){
+     
+      var tipo = 'Diesel';
+      var importe = '12.3';
+      localStorage.setItem(tipo, importe);
+
+}
+
+
+function obtenerPrecios(){
+
+     var importe = localStorage.getItem('Diesel') || '<empty>';
+      $('#navPrecios ul').append('<li><a href="calculos.html">'+importe+'</a></li>');
+
+}
+
+function limpiarPrecios(){
+
+    localStorage.clear();
+
+}
+
+
+
