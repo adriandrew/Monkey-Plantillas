@@ -1,67 +1,62 @@
 // Hay que calcular con variables.
-$(document).delegate('#Diesel', 'click', calcularDiesel);
+$(document).delegate('#Diesel', 'click', obtenerTipo('Diesel'));
+$(document).delegate('#btnCalcularPesosLitros', 'click', calcularPesosLitros);
 
-$(document).ready(
+var tipoGlobal;
 
+try{
+
+  $(document).ready( 
+ 
+  // Se invocan todas las funciones 
+  // Se actualizan los valores locales obtenidos del web service con el JSON y 
+  // Se muestran los valores locales actualizados. 
   llamarFunciones
+  
+  );
 
-	// Se llama a la funcion invocarJson.
-	//invocarJson
+}
+catch(Error){
 
-  // Se llama a la funcion obtenerPrecios de cada tipo.
-  //obtenerPrecios('Diesel'),
-  //obtenerPrecios('Magna'),
-  //obtenerPrecios('Premium')
+  // Se invocan los precios locales por cada tipo.
+  invocarObtenerPrecios
 
-);
+}
+
+function obtenerTipo(tipo){
+  
+  tipoGlobal = tipo;
+
+}
 
 function llamarFunciones(){
 
-try {
-    //Block of code to try
+  // Se llama a la funcion invocarJson.
+  invocarJson();
 
-    // Se llama a la funcion invocarJson.
-  invocarJson,
-
-    // Se llama a la funcion obtenerPrecios de cada tipo.
-   // Se llama a la funcion obtenerPrecios de cada tipo.
-  obtenerPrecios('Diesel'),
-  obtenerPrecios('Magna'),
-  obtenerPrecios('Premium')
-
-}
-catch(err) {
-    //Block of code to handle errors
-
-    //invocarObtenerPrecios
-
-      // Se llama a la funcion obtenerPrecios de cada tipo.
-  obtenerPrecios('Diesel'),
-  obtenerPrecios('Magna'),
-  obtenerPrecios('Premium')
+  // Se llama a la funcion invocarObtenerPrecios para obtener precios de cada tipo.
+  invocarObtenerPrecios();
 
 }
 
-}
-
-
-//TODO. Falló al hacerlo de esta manera u.u
 function invocarObtenerPrecios(){
 
   // Se llama a la funcion obtenerPrecios de cada tipo.
-  obtenerPrecios('Diesel'),
-  obtenerPrecios('Magna'),
-  obtenerPrecios('Premium')
+  obtenerPrecios('Diesel');
+  obtenerPrecios('Magna');
+  obtenerPrecios('Premium');
 
 }
 
+function calcularPesosLitros() {
 
-function calcularDiesel() {
-    //document.getElementById("Diesel").innerHTML = "YOU CLICKED ME!";
-    alert('diesel');
-  
-  $tipo = 'diesel';
-  $precio = '';
+  var importe = localStorage.getItem(tipoGlobal) || '<empty>';
+
+  var pesos = document.getElementById('txtPesosLitros').value;
+
+  var total = pesos / importe;
+
+  document.getElementById('lblTotalPesosLitros').innerHTML = 'Total: $ '+total;
 
 }
 
@@ -69,86 +64,65 @@ function invocarJson() {
 
 	$.ajax({
 
-          type: "POST",
+    type: "POST",
           
-          url: "http://monkey.somee.com/Gasolinax/preciosGasolinaMexico.php",
+    url: "http://monkey.somee.com/Gasolinax/preciosGasolinaMexico.php",
           
-          data: "{}",
+    data: "{}",
           
-          contentType: "application/jsonp; charset=utf-8",
+    contentType: "application/jsonp; charset=utf-8",
           
-          dataType: "jsonp",
+    dataType: "jsonp",
           
-          success: function(response) { 
+    success: function(response) { 
 		
-          	window.listadoI = response; 
+    	window.listadoI = response; 
 		
-            	inyectarListado(listadoI)
+      	inyectarListado(listadoI)
 
-           // Se llama a la funcion obtenerPrecios de cada tipo.
-  obtenerPrecios('Diesel'),
-  obtenerPrecios('Magna'),
-  obtenerPrecios('Premium')
-          },
+    },
           
-          error: function(XMLHttpRequest, textStatus, Error) {
+    error: function(XMLHttpRequest, textStatus, Error) {
           
-            // Se llama a la funcion obtenerPrecios de cada tipo.
-  obtenerPrecios('Diesel'),
-  obtenerPrecios('Magna'),
-  obtenerPrecios('Premium')
-
-
-          	console.log(XMLHttpRequest, textStatus, Error);
+    	console.log(XMLHttpRequest, textStatus, Error);
           
-          }
+    }
 
-    });
+  });
 
 } //invocarJson
 
 function inyectarListado(listado) {
 
-     $.each(listado.preciosGasolina, function(clave, valor) {
+  $.each(listado.preciosGasolina, function(clave, valor) {
 
-          //$('#inyectarPrecios').append('<h2>'+valor.tipo+': '+valor.importe+'</h2>');
-
-        //  $('#navPrecios ul').append('<li><a href="calculos.html" id="'+valor.tipo+'">'+valor.tipo+' $'+valor.importe+'</a></li>');
+    //  $('#navPrecios ul').append('<li><a href="calculos.html" id="'+valor.tipo+'">'+valor.tipo+' $'+valor.importe+'</a></li>');
      
-        var tipo = valor.tipo;
-        var importe = valor.importe;
-//      localStorage.setItem(tipo, importe);
+    var tipo = valor.tipo;
+    var importe = valor.importe;
+    guardarPrecios(tipo, importe)
 
-      guardarPrecios(tipo, importe)
-
-      //obtenerPrecios(tipo)
-
-     }); 
+  }); 
 
 } //inyectarListado
 
 
 function guardarPrecios(tipo, importe){
      
-    //  var tipo = 'Diesel';
-    //  var importe = '12.3';
-      localStorage.setItem(tipo, importe);
+  localStorage.setItem(tipo, importe);
 
 }
 
-
 function obtenerPrecios(tipo){
 
-     var importe = localStorage.getItem(tipo) || '<empty>';
-      $('#navPrecios ul').append('<li><a href="calculos.html">'+tipo+' $ '+importe+'</a></li>');
+  var importe = localStorage.getItem(tipo) || '<empty>';
+
+  $('#navPrecios ul').append('<li><a href="calculos.html" id="'+tipo+'">'+tipo+' $ '+importe+'</a></li>');
 
 }
 
 function limpiarPrecios(){
 
-    localStorage.clear();
+  localStorage.clear();
 
 }
-
-
-
