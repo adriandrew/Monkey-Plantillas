@@ -1,6 +1,10 @@
 // Hay que calcular con variables.
 $(document).delegate('#Diesel', 'click', obtenerTipo('Diesel'));
+$(document).delegate('#Magna', 'click', obtenerTipo('Magna'));
+$(document).delegate('#Premium', 'click', obtenerTipo('Premium'));
+
 $(document).delegate('#btnCalcularPesosLitros', 'click', calcularPesosLitros);
+$(document).delegate('#btnCalcularLitrosPesos', 'click', calcularLitrosPesos);
 
 var tipoGlobal;
 
@@ -43,7 +47,9 @@ function invocarObtenerPrecios(){
 
   // Se llama a la funcion obtenerPrecios de cada tipo.
   obtenerPrecios('Diesel');
+
   obtenerPrecios('Magna');
+
   obtenerPrecios('Premium');
 
 }
@@ -56,7 +62,19 @@ function calcularPesosLitros() {
 
   var total = pesos / importe;
 
-  document.getElementById('lblTotalPesosLitros').innerHTML = 'Total: $ '+total;
+  document.getElementById('lblTotalPesosLitros').innerHTML = 'Total '+total+' Litros.';
+
+}
+
+function calcularLitrosPesos() {
+
+  var importe = localStorage.getItem(tipoGlobal) || '<empty>';
+
+  var litros = document.getElementById('txtLitrosPesos').value;
+
+  var total = litros * importe;
+
+  document.getElementById('lblTotalLitrosPesos').innerHTML = 'Total '+total+' Pesos.';
 
 }
 
@@ -99,7 +117,9 @@ function inyectarListado(listado) {
     //  $('#navPrecios ul').append('<li><a href="calculos.html" id="'+valor.tipo+'">'+valor.tipo+' $'+valor.importe+'</a></li>');
      
     var tipo = valor.tipo;
+
     var importe = valor.importe;
+
     guardarPrecios(tipo, importe)
 
   }); 
