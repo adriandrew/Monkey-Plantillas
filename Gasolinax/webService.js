@@ -143,9 +143,21 @@ function inyectarListado(listado) {
 
 } //inyectarListado
 
-function guardarTipo(tipo){
+function guardarTipoDiesel(){
      
-  localStorage.setItem('Tipo', tipo);
+  localStorage.setItem('Tipo', 'Diesel');
+
+}
+
+function guardarTipoMagna(){
+     
+  localStorage.setItem('Tipo', 'Magna');
+
+}
+
+function guardarTipoPremium(){
+     
+  localStorage.setItem('Tipo', 'Premium');
 
 }
 
@@ -167,7 +179,7 @@ function obtenerPrecios(tipo){
 
   var importe = localStorage.getItem(tipo) || '<empty>';
 
-  $('#navPrecios ul').append('<li><a href="calculos.html" id="'+tipo+'" onclick="guardarTipo("Diesel")">'+tipo+' $ '+importe+'</a></li>');
+  $('#navPrecios ul').append('<li><a href="calculos.html" id="'+tipo+'" onclick="guardarTipo'+tipo+'()">'+tipo+' $ '+importe+'</a></li>');
 
 }
 
