@@ -1,22 +1,20 @@
 // Hay que calcular con variables.
-$(document).delegate('#Diesel', 'click', obtenerTipo('Diesel'));
-$(document).delegate('#Magna', 'click', obtenerTipo('Magna'));
-$(document).delegate('#Premium', 'click', obtenerTipo('Premium'));
+//$(document).delegate('#Diesel', 'click', guardarTipo('Diesel'));
+//$(document).delegate('#Magna', 'click', obtenerTipo('Magna'));
+//$(document).delegate('#Premium', 'click', obtenerTipo('Premium'));
 
 $(document).delegate('#btnCalcularPesosLitros', 'click', calcularPesosLitros);
 $(document).delegate('#btnCalcularLitrosPesos', 'click', calcularLitrosPesos);
 
-var tipoGlobal;
-
 try{
 
   $(document).ready( 
- 
-  // Se invocan todas las funciones 
+ 	
+	// Se invocan todas las funciones 
   // Se actualizan los valores locales obtenidos del web service con el JSON y 
   // Se muestran los valores locales actualizados. 
   llamarFunciones
-  
+
   );
 
 }
@@ -25,13 +23,17 @@ catch(Error){
   // Se invocan los precios locales por cada tipo.
   invocarObtenerPrecios
 
-}
+}	
 
-function obtenerTipo(tipo){
-  
-  tipoGlobal = tipo;
+$(window).load(
+    // this code will run after all other $(document).ready() scripts
+    // have completely finished, AND all page elements are fully loaded.
+ 
+	//asignarEventosTipo
 
-}
+	//inyectarTituloTipo
+
+);
 
 function llamarFunciones(){
 
@@ -41,6 +43,21 @@ function llamarFunciones(){
   // Se llama a la funcion invocarObtenerPrecios para obtener precios de cada tipo.
   invocarObtenerPrecios();
 
+  // Asignar eventos a los botones.
+  //asignarEventosTipo();
+
+  //
+  inyectarTituloTipo();
+
+}
+
+function asignarEventosTipo(){
+
+	$('#Diesel').click( guardarTipo('Diesel') )
+
+	$('#Magna').click( guardarTipo('Magna') )
+
+	$('#Premium').click( guardarTipo('Premium') )
 }
 
 function invocarObtenerPrecios(){
@@ -126,6 +143,19 @@ function inyectarListado(listado) {
 
 } //inyectarListado
 
+function guardarTipo(tipo){
+     
+  localStorage.setItem('Tipo', tipo);
+
+}
+
+function obtenerTipo(){
+
+  var tipo = localStorage.getItem('Tipo') || '<empty>';
+
+  return tipo;
+
+}
 
 function guardarPrecios(tipo, importe){
      
@@ -137,12 +167,18 @@ function obtenerPrecios(tipo){
 
   var importe = localStorage.getItem(tipo) || '<empty>';
 
-  $('#navPrecios ul').append('<li><a href="calculos.html" id="'+tipo+'">'+tipo+' $ '+importe+'</a></li>');
+  $('#navPrecios ul').append('<li><a href="calculos.html" id="'+tipo+'" onclick="guardarTipo("Diesel")">'+tipo+' $ '+importe+'</a></li>');
 
 }
 
 function limpiarPrecios(){
 
   localStorage.clear();
+
+}
+
+function inyectarTituloTipo(){
+
+	$('#lblTituloTipo').html( obtenerTipo );
 
 }
