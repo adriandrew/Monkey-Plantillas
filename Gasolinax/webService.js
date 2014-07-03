@@ -1,10 +1,12 @@
 // Hay que calcular con variables.
-//$(document).delegate('#Diesel', 'click', guardarTipo('Diesel'));
-//$(document).delegate('#Magna', 'click', obtenerTipo('Magna'));
-//$(document).delegate('#Premium', 'click', obtenerTipo('Premium'));
+$(document).delegate('#Diesel', 'click', guardarTipoDiesel);
+$(document).delegate('#Magna', 'click', guardarTipoMagna);
+$(document).delegate('#Premium', 'click', guardarTipoPremium);
 
 $(document).delegate('#btnCalcularPesosLitros', 'click', calcularPesosLitros);
 $(document).delegate('#btnCalcularLitrosPesos', 'click', calcularLitrosPesos);
+
+var tipoGlobal;
 
 try{
 
@@ -46,18 +48,21 @@ function llamarFunciones(){
   // Asignar eventos a los botones.
   //asignarEventosTipo();
 
-  //
+  // Se asigna el valor a la variable global.
+	obtenerTipoGlobal();
+
+  // Se inyecta el tipo en el titulo. 
   inyectarTituloTipo();
 
 }
 
 function asignarEventosTipo(){
 
-	$('#Diesel').click( guardarTipo('Diesel') )
+	$('#Diesel').click( guardarTipoDiesel )
 
-	$('#Magna').click( guardarTipo('Magna') )
+	$('#Magna').click( guardarTipoMagna )
 
-	$('#Premium').click( guardarTipo('Premium') )
+	$('#Premium').click( guardarTipoPremium )
 }
 
 function invocarObtenerPrecios(){
@@ -179,7 +184,9 @@ function obtenerPrecios(tipo){
 
   var importe = localStorage.getItem(tipo) || '<empty>';
 
-  $('#navPrecios ul').append('<li><a href="calculos.html" id="'+tipo+'" onclick="guardarTipo'+tipo+'()">'+tipo+' $ '+importe+'</a></li>');
+  $('#navPrecios ul').append('<li><a href="calculos.html" id="'+tipo+'" ">'+tipo+' $ '+importe+'</a></li>');
+
+// onclick="guardarTipo'+tipo+'()
 
 }
 
@@ -192,5 +199,11 @@ function limpiarPrecios(){
 function inyectarTituloTipo(){
 
 	$('#lblTituloTipo').html( obtenerTipo );
+
+}
+
+function obtenerTipoGlobal(){
+
+	tipoGlobal = obtenerTipo();
 
 }
