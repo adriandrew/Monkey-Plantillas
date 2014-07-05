@@ -113,6 +113,8 @@ a{
 #navPrecios, #navPrecios ul{
 	padding: 0;
 	margin: 0;
+	width: 100%;
+	height: 150px;
 }
 
 #navPrecios ul li:first-child{
@@ -120,15 +122,13 @@ a{
 }
 
 #navPrecios ul li{
-	width: auto;
 	background-color: #343434;
 	list-style: none;
-	margin: 10px 0;
-	padding: 15px;
+	padding: 25px;
+	margin: auto;
 
-	width: 70px;
-	height: 70px;
-	float: left;
+	width: 80px;
+	height: 80px;
 
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
@@ -143,8 +143,9 @@ a{
 }
 
 #navPrecios ul li:hover{
+	/* background-image: url("color.jpg"); */
 	background: none;
-
+	border-color: white;
 }
 
 #navPrecios ul li a{
@@ -211,4 +212,10 @@ a{
 
 #lblTituloTipo{
 	text-align: center;
+}
+
+.liTipo{
+	width: 33.3% !important;
+	height: auto !important;
+	float: left;
 }
