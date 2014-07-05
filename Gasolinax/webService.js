@@ -112,7 +112,7 @@ function invocarJson() {
           
     contentType: "application/jsonp; charset=utf-8",
           
-    dataType: "jsonp",
+    dataType: "jsonp", 
           
     success: function(response) { 
 		

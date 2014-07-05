@@ -10,8 +10,7 @@ body{
 	background-color: #220404; 
 	*/	
 
-	background-color: #191919;
-	
+	background-color: #191919;	
 	background-repeat: no-repeat;
 	background-size: 160%;
 	background-position: center;
@@ -28,7 +27,7 @@ body{
  
     /* Fuente de Google. */
     font-family: 'Roboto', sans-serif !important;
-    font-size: 20px !important;
+    font-size: 15px !important;
     font-weight: 100 !important;
 
     /* Transparencia. 
@@ -39,6 +38,9 @@ body{
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
 	transition:box-shadow 2s, transform 500ms, filter 500ms ease-in-out; 
 	*/
+}
+
+#bodyCalculos{
 }
 
 h2{
@@ -114,7 +116,7 @@ a{
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	height: 150px;
+	height: 100px;
 }
 
 #navPrecios ul li:first-child{
@@ -124,11 +126,11 @@ a{
 #navPrecios ul li{
 	background-color: #343434;
 	list-style: none;
-	padding: 25px;
+	padding: 15px;
 	margin: auto;
 
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
@@ -143,9 +145,8 @@ a{
 }
 
 #navPrecios ul li:hover{
-	/* background-image: url("color.jpg"); */
-	background: none;
-	border-color: white;
+	background: none; 
+	border-color: white;	
 }
 
 #navPrecios ul li a{
@@ -159,7 +160,10 @@ a{
 
 #pesosLitros, #litrosPesos{
 	margin-bottom: 20px;
-	width: 100%;
+	width: 100%;	
+
+	clear: both;
+	height: 80px;		
 }
 
 #lblLitrosPesos, #lblPesosLitros{
@@ -168,9 +172,12 @@ a{
 	padding-bottom: 10px;
 }
 
+#btnCalcularPesosLitros, #btnCalcularLitrosPesos, #principal, #navPrecios ul li{
+	border: 1px solid #707070;
+}
+
 #txtPesosLitros, #txtLitrosPesos, #btnCalcularPesosLitros, #btnCalcularLitrosPesos{
-	width: 49%;
-	height: 50px;
+	height: 70px;
 
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -178,14 +185,14 @@ a{
 }
 
 #txtPesosLitros, #txtLitrosPesos{
+	width: 75%;
+
 	box-sizing: border-box;
 	color: white;
 	background: none;
 	text-align: center;
-}
 
-#btnCalcularPesosLitros, #btnCalcularLitrosPesos, #principal, #navPrecios ul li{
-	border: 1px solid #707070;
+	float: left;
 }
 
 /*
@@ -197,6 +204,11 @@ a{
 }
 */
 
+#btnCalcularPesosLitros:hover, #btnCalcularLitrosPesos:hover{
+	border-color: white;
+	background-color: inherit;
+}
+
 #btnCalcularPesosLitros, #btnCalcularLitrosPesos{
 	background-image: url("calcula.png");	
 	background-repeat: no-repeat;
@@ -204,7 +216,9 @@ a{
 	width: 70px;
 	height: 70px;
 	float: right;
-	background-color: inherit !important;
+	
+	background-color: rgba(0, 0, 0, 0.3);
+
 	-webkit-border-radius: 35px;
 	-moz-border-radius: 35px;
 	border-radius: 35px;
