@@ -84,7 +84,9 @@ function calcularPesosLitros() {
 
   var total = pesos / importe;
 
-  document.getElementById('lblTotalPesosLitros').innerHTML = 'Total '+total+' Litros.';
+  var totalCortado = total.toFixed(3);
+
+  document.getElementById('lblTotalPesosLitros').innerHTML = 'Total '+totalCortado+' Litros.';
 
 }
 
@@ -96,7 +98,9 @@ function calcularLitrosPesos() {
 
   var total = litros * importe;
 
-  document.getElementById('lblTotalLitrosPesos').innerHTML = 'Total '+total+' Pesos.';
+  var totalCortado = total.toFixed(3);
+
+  document.getElementById('lblTotalLitrosPesos').innerHTML = 'Total '+totalCortado+' Pesos.';
 
 }
 
@@ -106,7 +110,7 @@ function invocarJson() {
 
     type: "POST",
           
-    url: "http://monkey.somee.com/Gasolinax/preciosGasolinaMexico.php",
+    url: "http://monkey.somee.com/Gasolinax/wsCombustibles.php",
           
     data: "{}",
           
