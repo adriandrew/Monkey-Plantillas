@@ -28,7 +28,7 @@ html, body{
  
     /* Fuente de Google. */
     font-family: 'Roboto', sans-serif !important;
-    font-size: 15px !important;
+    font-size: 14px !important;
     font-weight: 100 !important;
 
     /* Transparencia. 
@@ -86,8 +86,12 @@ div, li{
 	border-radius: 20px;
 }
 
-#sectionIndex, #footerIndex, #sectionCalculos, #footerCalculos{
-	height: 50%;	
+#sectionCalculos, #footerCalculos{
+	max-height: 50%;	
+}
+
+#sectionIndex, #footerIndex{
+	height: 50%;
 }
 
 #navPrecios, #navPrecios ul{
@@ -108,8 +112,8 @@ div, li{
 	padding: 15px;
 	margin: auto;
 
-	width: 60px;
-	height: 60px;
+	width: 55px;
+	height: 55px;
 
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
@@ -182,7 +186,7 @@ div, li{
 }
 
 #txtPesosLitros, #txtLitrosPesos{
-	width: 75%;
+	width: 70%;
 
 	box-sizing: border-box;
 	color: white;

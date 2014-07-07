@@ -188,7 +188,7 @@ function obtenerPrecios(tipo){
 
   var importe = localStorage.getItem(tipo) || '<empty>';
 
-  $('#navPrecios ul').append('<div class="liTipo"><li><a href="calculos.html" id="'+tipo+'" ">'+tipo+' $ '+importe+'</a></li></div>');
+  $('#navPrecios ul').append('<div class="liTipo"><li><a href="calculos.html" id="'+tipo+'" ">$'+importe+'</br>'+tipo+'</a></li></div>');
 
 // onclick="guardarTipo'+tipo+'()
 
