@@ -1,4 +1,4 @@
-@media (min-width: 880px) and (max-width: 960px) {
+@media (min-width: 850px) and (max-width: 960px) {
 
 #principal{
 	width: 880px;
@@ -6,12 +6,6 @@
 
 #headerContenido {
 	width: 100%;
-}
-
-#sectionSidebarIzquierda{
-	width: 170px;
-	margin: 0;
-	float: right;
 }
 
 #logo{
@@ -24,6 +18,40 @@
 
 #navEquipos {
 	width: 100%;
+	position: relative;
+}
+
+#sectionSidebarIzquierda, #sectionContenido{
+	margin-top: 90px;
+}
+
+#sectionSidebarIzquierda{
+	width: 220px;
+	float: right;
+	margin-right: 0;
+}
+
+#sectionContenido{
+	margin-right: 10px;
+}
+
+#sectionSidebarDerecha{
+	width: 100%;
+	position: absolute;
+	top: 200px;
+}
+
+#sectionSidebarDerecha h2{
+	display: none;
+}
+
+#navLigas ul li{
+	width: 108px;
+	border-width: 1px;
+}
+
+#navTopicos, #navMasVotado{
+	display: none;
 }
 
 #header, #section, #footer{
