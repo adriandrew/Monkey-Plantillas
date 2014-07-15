@@ -1,4 +1,4 @@
-/* Es para la imagen elegante de fondo.
+/* Es para la imagen elegante de fondo, la imagen de color.
 body{
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -36,7 +36,7 @@ a{
 	display: block;
 	width: auto;
 	height: 100%;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
 }
 
@@ -98,7 +98,14 @@ p, ul, h1, h2, h3, h4{
 
 #logo{
 	background-image: url("../Images/logo.jpg");	
-	background-position: center;
+	background-position: center center;
+	
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+
 	width: 180px;
 	height: 180px;
 
@@ -109,9 +116,7 @@ p, ul, h1, h2, h3, h4{
 	-ms-linear-border-radius: 110px;
 	border-radius: 110px;
 	
-	position: absolute;
 	z-index: 2;
-	margin-right: 10px;
 	float: left;
 }
 
@@ -346,6 +351,10 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 	width: 145px;
 	height: 23.9%;
 	border: 2.5px solid #6e6e6e;	
+}
+
+#navLigas ul li a{	
+
 }
 
 #navLigas ul li:hover, #navLigas ul li a:hover{
