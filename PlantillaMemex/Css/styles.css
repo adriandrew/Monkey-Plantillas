@@ -97,7 +97,7 @@ p, ul, h1, h2, h3, h4{
 }
 
 #logo{
-	background-image: url("../Images/logo.jpg");	
+	background-image: url("../Images/logo.png");	
 	background-position: center center;
 	
 	background-size: cover;
@@ -118,6 +118,7 @@ p, ul, h1, h2, h3, h4{
 	
 	z-index: 2;
 	float: left;
+	position: absolute;
 }
 
 /* ---------------------------- Header -------------------------- */
