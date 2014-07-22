@@ -1,12 +1,17 @@
+
 // alert("prueba");
+/*
 function Cargada(id){
 
 	alert("prueba");
 
-}
+};
+
+*/
 
 
 // Muestra Oculta
+/*
 function MuestraOculta(id){
 
 if (document.getElementById){ //se obtiene el id
@@ -16,15 +21,19 @@ equipos.style.display = (equipos.style.display == 'none') ? 'block' : 'none'; //
 
 }
 
-window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
+window.onload = function(){//hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente
 
-MuestraOculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
+MuestraOculta('contenido_a_mostrar'); // "contenido_a_mostrar" es el nombre que le dimos al DIV 
 
 }
+
+*/
 
 // Termina Muestra Oculta
 
 // Audio
+
+/*
 
 var audio;
 var playlist;
@@ -65,4 +74,24 @@ function run(link, player){
         audio[0].play();
 }
 
+*/
+
 // Termina Audio
+
+
+$(document).ready(function() { 
+
+    // aplicando efectos a todos los enlaces 
+    //$("a").fancybox(); 
+    
+            $("#prueba").fancybox({
+                'width'             : '75%',
+                'height'            : '75%',
+                'autoScale'         : false,
+                'transitionIn'      : 'none',
+                'transitionOut'     : 'none',
+                'type'              : 'iframe'
+            });
+
+});
+
