@@ -84,14 +84,14 @@ $(document).ready(function() {
     // aplicando efectos a todos los enlaces 
     //$("a").fancybox(); 
     
-            $("#prueba").fancybox({
-                'width'             : '75%',
-                'height'            : '75%',
-                'autoScale'         : false,
-                'transitionIn'      : 'none',
-                'transitionOut'     : 'none',
-                'type'              : 'iframe'
-            });
+    $("#iframe").fancybox({
+        'width'             : '75%',
+        'height'            : '75%',
+        'autoScale'         : false,
+        'transitionIn'      : 'none',
+        'transitionOut'     : 'none',
+        'type'              : 'iframe'
+    });
 
 });
 
