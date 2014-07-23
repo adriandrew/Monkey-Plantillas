@@ -84,7 +84,7 @@ $(document).ready(function() {
     // aplicando efectos a todos los enlaces 
     //$("a").fancybox(); 
     
-    $("#iframe").fancybox({
+    $(".frame").fancybox({
         'width'             : '75%',
         'height'            : '75%',
         'autoScale'         : false,
