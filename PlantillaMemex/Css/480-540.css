@@ -9,11 +9,18 @@
 }
 
 #logo{
-	display: none;
+	width: 100px;
+	height: 100px;
+	margin: 3px 0 0 5px;
+}
+
+#headerTexto{
+	width: 140px;
+	padding-left: 120px;
 }
 
 #headerCompartir{
-	width: 45%
+	width: 220px;
 }
 
 #navPrincipal ul#menu li {
@@ -80,6 +87,18 @@
 
 #navTopicos, #navMasVotado{
 	display: none;
+}
+
+#footer{
+	background-position-x: 70px;
+}
+
+#monkey{
+	margin-left: 0;
+}
+
+#humanstxt{
+	margin-left: 10px;
 }
 
 #header, #section, #footer{

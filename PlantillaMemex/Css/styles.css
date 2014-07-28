@@ -19,7 +19,7 @@ body{
 
 	background: #1c1c1c;	
 	margin-top: -1px;
-	overflow-y: hidden!important;
+	/* overflow-y: hidden!important; */
 }
 
 /* Nuevas etiquetas de HTML5 para que se muestren bien en IE */
@@ -45,7 +45,7 @@ li{
 	float: left;	
 }
 
-p, ul, h1, h2, h3, h4{
+p, ul, h1, h2, h3, h4, h5, h6{
 	padding: 0;
 	margin: 0;
 	display: inline;
@@ -146,6 +146,11 @@ p, ul, h1, h2, h3, h4{
 	background-color: black;
 }
 
+#headerTexto{
+	float: left;
+	width: 75%;
+}
+
 #headerCompartir{
 	width: 25%;
 	height: 50%;
@@ -209,8 +214,7 @@ p, ul, h1, h2, h3, h4{
 }
 
 #navPrincipal ul#menu li a{
-	color: white;
-	display: block;
+	color: inherit;
 }
 /* Termina menu */
    
@@ -286,7 +290,7 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 }
 
 #navEquipos ul li a{
-	height: 100%;
+
 }
 /* Termina Nav Equipos */
 
@@ -657,6 +661,7 @@ background-image: url("../images/ligas/LogoPremier.png");
 	width: 88px;
 	height: 31px;
 	background-image: url("../Images/Tecnologias/humanstxt-bn.png");
+	background-repeat: no-repeat; 
 	float: left;
 	margin: 10px 0 0 40px;	
 }

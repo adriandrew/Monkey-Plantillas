@@ -6,6 +6,7 @@
 
 #logo{
 	width: 100px;
+	height: 150px;
 }
 
 #headerContenido {
@@ -26,7 +27,7 @@
 }
 
 #navEquipos {
-	width: 965px;
+	width: 100%;
 }
 
 #header, #section, #footer{

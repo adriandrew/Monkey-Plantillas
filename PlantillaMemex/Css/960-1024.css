@@ -19,7 +19,14 @@
 }
 
 #logo{
-	display: none;
+	width: 100px;
+	height: 100px;
+	margin: 3px 0 0 5px;
+}
+
+#headerTexto{
+	width: 600px;
+	margin-left: 120px;
 }
 
 #navPrincipal ul#menu li {
