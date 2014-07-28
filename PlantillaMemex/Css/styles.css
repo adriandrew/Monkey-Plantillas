@@ -8,6 +8,7 @@ body{
 } 
 */
 
+/* Body elegante */
 body{
 	/* Para que tenga la imagen de las tablas grises.
 	background: #1c1c1c url("../Images/fondo.png");	
@@ -21,6 +22,7 @@ body{
 	margin-top: -1px;
 	/* overflow-y: hidden!important; */
 }
+
 
 /* Nuevas etiquetas de HTML5 para que se muestren bien en IE */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
@@ -349,17 +351,17 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 }
 
 #navLigas{
-	height: 300px;
+	height: 256px;
 }
 
 #navLigas ul li{
 	width: 145px;
-	height: 23.9%;
+	height: 60px;
 	border: 2.5px solid #6e6e6e;	
 }
 
 #navLigas ul li a{	
-
+	background-size: contain;
 }
 
 #navLigas ul li:hover, #navLigas ul li a:hover{

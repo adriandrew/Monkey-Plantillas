@@ -20,12 +20,12 @@
 }
 
 #sectionContenido{
-	margin-left: 25px;
+	padding: 25px 50px;
 	margin-right: 24px;
 }
 
 #sectionSidebarDerecha{
-	margin-right: 25px;
+
 }
 
 #navPrincipal ul#menu li {

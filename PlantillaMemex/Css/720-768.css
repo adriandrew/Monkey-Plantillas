@@ -16,7 +16,7 @@
 
 #headerTexto{
 	width: 380px;
-	padding-left: 120px;
+	margin-left: 120px;
 }
 
 #headerCompartir{
@@ -35,7 +35,7 @@
 	position: absolute;
 	width: 55px;
 	height: auto;
-	top: 90px;
+	top: 50px;
 	right: 0;
 }
 
@@ -45,7 +45,7 @@
 }
 
 #sectionSidebarIzquierda, #sectionContenido{
-	margin-top: 90px;
+	margin-top: 50px;
 }
 
 #sectionSidebarIzquierda{
@@ -62,7 +62,7 @@
 
 #sectionSidebarDerecha{
 	width: 100%;
-	height: 75px;
+	height: 37px;
 	position: absolute;
 	top: 0;
 	margin-bottom: 0;
