@@ -1,4 +1,4 @@
-@media screen and (min-width: 640px) and (max-width: 720px) {
+@media all and (min-width: 640px) and (max-width: 719px) {
 
 #principal{
 	width: 640px;

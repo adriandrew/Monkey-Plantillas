@@ -92,6 +92,7 @@ p, ul, h1, h2, h3, h4, h5, h6{
 #navPrincipal li:hover, #section li:hover{
 	/* Para efectos de prueba solamente */
 	background-color: #9E682A !important;
+	color: white !important;
 }
 
 #logo, #monkey{
