@@ -1,4 +1,4 @@
-@media (min-width: 720px) and (max-width: 768px) {
+@media screen and (min-width: 720px) and (max-width: 768px) {
 
 #principal{
 	width: 720px;
@@ -78,7 +78,7 @@
 }
 
 #navLigas ul li{
-	width: 88.01px;
+	width: 88px;
 	height: 100%;
 	border-width: 1px;
 }

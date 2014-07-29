@@ -1,4 +1,4 @@
-@media (min-width: 240px) and (max-width: 320px) {
+@media screen and (min-width: 240px) and (max-width: 320px) {
 
 body{
 	font-size: 14px !important;
