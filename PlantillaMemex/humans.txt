@@ -1,6 +1,6 @@
 /* TEAM */
                             
-Desarrollador: Aldo Adrian Andrew Lopez.
+Developer: Aldo Adrian Andrew Lopez.
                             
 Site: www.monkey.net
 
@@ -16,7 +16,7 @@ Location: Culiacan, Sinaloa, Mexico.
 							
 /* THANKS */
 							
-Name: Todos los que hicieron posible este proyecto, los Monkeys! 
+Name: Gracias a todos los que hicieron posible este proyecto, los Monkeys! 
 
                  
                         [...]                        
@@ -25,9 +25,9 @@ Name: Todos los que hicieron posible este proyecto, los Monkeys!
 /* SITE */
                             
 Updates: 11/03/2014
-Last update: 18/03/2014
+Last update: 29/07/2014
                             
-Standards: HTML5, CSS3,..
+Standards: HTML5, CSS3, JS..
                             
 Components: Modernizr, jQuery, etc.
                             

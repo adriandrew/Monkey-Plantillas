@@ -1,0 +1,104 @@
+@media all and (min-width: 200px) and (max-width: 239px) {
+
+body{
+	font-size: 11px !important;
+}
+
+#principal{
+	width: 200px;
+}
+
+#header{
+	height: 80px;
+}
+
+#headerContenido {
+	width: 100%;
+	height: 80px;
+	margin-bottom: 5px;
+}
+
+#logo{
+	width: 40px;
+	height: 40px;
+	margin: 3px 0 0 5px;
+}
+
+#headerBarra{
+	height: 50px;
+}
+
+#headerTexto{
+	display: none;
+}
+
+#headerCompartir{
+	width: 150px;
+	height: 100%;
+}
+
+#headerCompartir ul li a{
+	background-size: contain;
+}
+
+#navPrincipal{
+	height: 30px;
+}
+
+#navPrincipal ul#menu li {
+	width: 47.5px;
+	margin-left: 2px;
+	line-height: 30px;
+}
+
+#navEquipos{
+	display: none;
+}
+
+#navEquipos ul li{
+	width: 11.111%;
+	height: 40px;
+}
+
+#sectionSidebarIzquierda{
+	display: none;
+}
+
+#sectionContenido{
+	width: 100%;
+	margin: 0;
+	padding: 5px 0;
+}
+
+#sectionSidebarDerecha{
+	display: none;
+}
+
+#footer, #monkey, #humanstxt{
+	background-size: contain;
+}
+
+#footer{
+	height: 70px;
+	background-position: right center;
+}
+
+#monkey{
+	background-position: center; 
+	width: 60px;
+	height: 30px;
+	margin: 0;
+	border: 0;
+}
+
+#humanstxt{
+	width: 50px;
+	height: 20px;
+	margin: 15px 0 0 5px;
+}
+
+#header, #section, #footer{
+	color: seagreen !important;
+}
+
+}
