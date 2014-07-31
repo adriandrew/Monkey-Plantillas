@@ -3,10 +3,9 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
-	width: 100%;
-	height: 100%;		
 	margin: 0 auto;
 
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;	
 	/* overflow-y: hidden !important; */
 }
 
@@ -16,7 +15,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 h1{
-	
+	font-weight: lighter !important;
+	font-size: 40px;
 }
 
 a{
@@ -50,11 +50,9 @@ p, ul, h1, h2, h3, h4, h5, h6{
 
 #header, #section, #footer, #navPrincipal{		
 	width: 1200px;
-	color: white;
 }
 
-#header, #section, #footer{	
-	color: #6e6e6e;
+#header, #section, #footer{		
 	margin: 0 auto;
 }
 
@@ -63,6 +61,11 @@ p, ul, h1, h2, h3, h4, h5, h6{
 	border: solid 2px gray;
 	*/
 }	
+
+#header, #footer, #navPrincipal{
+	width: 1200px;
+	color: white;
+}
   
 #header, #footer{
 
@@ -83,11 +86,10 @@ p, ul, h1, h2, h3, h4, h5, h6{
 #navPrincipal li:hover, #section li:hover{
 	/* Para efectos de prueba solamente 
 	background-color: #9E682A !important;*/
-	color: white !important; 
 }
 
 #navPrincipal ul li:hover, #navEquipos ul li:hover{
-	background-color: rgba(0, 0, 0, 0.3);
+
 }
 
 #logo, #monkey{
@@ -95,7 +97,7 @@ p, ul, h1, h2, h3, h4, h5, h6{
 }
 
 #logo{
-	background-image: url("../Images/logo.png");	
+	background-image: url("../Images/logoBN.png");	
 	background-position: center center;
 	
 	background-size: cover;
@@ -118,14 +120,11 @@ p, ul, h1, h2, h3, h4, h5, h6{
 
 /* ---------------------------- Header -------------------------- */
 #header{	
-	float: left;
 	min-width: 100% !important;	
 	height: 50px;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;	
-	color: white;		
-	background: black;
-	border-bottom: 20px;
-	z-index: 1;	
+	/* background: black; */
+	background: rgba(0, 0, 0, 0.4);
+	border-bottom: 1px solid black;
 	position: relative;
 }
 
@@ -153,6 +152,11 @@ p, ul, h1, h2, h3, h4, h5, h6{
 
 
 /* ---------------------------- NavPrincipal -------------------------- */
+
+#navPrincipal, #navEquipos, #sectionSidebarIzquierda, #sectionSidebarDerecha{
+	/* background-color: rgba(0, 0, 0, 0.2); */ 
+}
+
 #navPrincipal{
 	height: 40px;
 	width: 1000px;	
@@ -165,13 +169,11 @@ p, ul, h1, h2, h3, h4, h5, h6{
 	*/
 }
 
-/* Menu y Submenu */
 #navPrincipal ul li:hover{
 	font-size: 20px;
-	border-color: transparent !important;
+	color: white !important; 		
+	border: 1px solid white !important;
 }
-/* Termina Menu y Submenu */
-
 
 /* Menu */
 #navPrincipal ul#menu {
@@ -188,7 +190,7 @@ p, ul, h1, h2, h3, h4, h5, h6{
     float: left;
 	margin-left: 4px;
 	line-height: 40px;
-	border: 1px solid white;
+	/* border: 1px solid white; */
 }
 
 #navPrincipal ul#menu li:first-child {
@@ -204,45 +206,14 @@ p, ul, h1, h2, h3, h4, h5, h6{
 }
 /* Termina menu */
    
-
-/* Submenu */
-#navPrincipal ul#menu ul {
- display: none;
- position: absolute;
- color: #fff;
- padding: 5px 0px 5px 5px;
- margin: 0;
- }
-   
-#navPrincipal ul#menu ul li{
- width:100%;
- margin:2% 0%;
-}  
-  
-#navPrincipal ul#menu ul li a{
- color: #fff;
-}
-   
-#navPrincipal ul#menu ul li a:hover{
- 	color: #aaa073;
-}
-   
-ul#menu li:hover ul ul,ul#menu li:hover ul ul ul,ul#menu li.iehover ul ul,ul#menu li.iehover ul ul ul {
- display: none;
- cursor:pointer;
-}
-   
-ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.iehover ul,ul#menu ul li.iehover ul,ul#menu ul ul li.iehover ul {
- display: block;
- cursor:pointer;
-}
-/* Termina Submenu */
 /* ------------------------- Termina NavPrincipal --------------------- */
 
 
 /* ---------------------------- Section -------------------------- */
 #section{ 
-	min-height: 1300px;
+	height: 1090px;	
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	color: #6e6e6e; 
 }
 
 #section ul li {
@@ -252,19 +223,29 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 }
 
 #sectionSidebarIzquierda, #sectionContenido, #sectionSidebarDerecha{
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
+}
+
+#sectionSidebarIzquierda, #sectionSidebarDerecha{
+
+}
+
+#sectionSidebarIzquierda, #sectionSidebarDerecha li{
+	background-color: black; 
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#sectionSidebarIzquierda:hover, #sectionSidebarDerecha li:hover{
+	background-color: white !important;
 }
 
 #sectionSidebarIzquierda li, #sectionSidebarDerecha li{
-	background-color: black;
+	
 }
 
 
 /* Nav Equipos */
 #navEquipos{
-	/* MacBook
-	width: 1055px; */
-
 	width: 1000px;
 	height: 50px;
     float: right;
@@ -278,22 +259,24 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 #navEquipos ul li a{
 
 }
+
+#navEquipos ul li:hover{
+	background: rgba(255, 255, 255, 0.1);
+}
 /* Termina Nav Equipos */
 
 
 /* Section Sidebar Izquierda */
 #sectionSidebarIzquierda{
 	width: 200px;
-	min-height: 1340px;
+	min-height: 1000px;
 	float: left;
 	margin-right: 25px;
 	clear: both;
-	background-color: black;
 }
 
 #sectionSidebarIzquierda:hover{
-	/* Para efectos de prueba solamente */
-	background-color: #9E682A !important;
+	
 }
 
 #sectionSidebarIzquierda ul li{
@@ -310,7 +293,7 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 	width: 644px; */
 
 	width: 600px;
-	min-height: 1300px;
+	min-height: 960px;
 	font-size: 25px;
 	background-color: white;
 	padding: 20px 25px;
@@ -323,15 +306,15 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 #sectionSidebarDerecha{
 	float: left;
 	width: 300px;
-	height: auto;
+	max-height: 1000px;
 }
 
 #sectionSidebarDerecha nav{
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 #sectionSidebarDerecha li:hover, #sectionSidebarDerecha a:hover{
-	
+
 }
 
 #navLigas{
@@ -366,7 +349,7 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 }
 
 #navTopicos{
-	height: 600px;
+	height: 400px;
 }
 
 #navTopicos ul li {
@@ -375,7 +358,8 @@ ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.
 }
 
 #navMasVotado{
-	height: 300px;
+	height: 250px;
+	margin-bottom: 0 !important;
 }
 
 #navMasVotado ul li{
