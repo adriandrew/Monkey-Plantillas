@@ -1,0 +1,108 @@
+@media all and (min-width: 480px) and (max-width: 539px) {
+
+#principal{
+	width: 480px;
+}
+
+#headerContenido {
+	width: 100%;
+}
+
+#logo{
+	width: 100px;
+	height: 100px;
+	margin: 3px 0 0 5px;
+}
+
+#headerTexto{
+	width: 140px;
+	margin-left: 120px;
+}
+
+#headerCompartir{
+	width: 220px;
+}
+
+#navPrincipal ul#menu li {
+	width: 113.75px;
+}
+
+#navEquipos{
+	width: 100%;
+}
+
+#navEquipos ul li{
+	height: 40px;
+}
+
+#section{
+	position: relative;
+}
+
+#sectionSidebarIzquierda, #sectionContenido{
+	margin-top: 90px;
+}
+
+#sectionSidebarIzquierda{
+	width: 108px;
+	float: right;
+	margin-right: 0;
+
+	display: none;
+}
+
+#sectionContenido{
+	width: 460px;
+	margin-top: 0; 
+	margin-right: 0;
+	padding: 10px;
+}
+
+#sectionSidebarDerecha{
+	width: 100%;
+	position: absolute;
+	top: 40px;
+	height: 75px;
+
+	display: none;
+}
+
+#sectionSidebarDerecha nav{
+	margin-bottom: 0;
+}
+
+#sectionSidebarDerecha h2{
+	display: none;
+}
+
+#navLigas{
+	height: 100%;
+}
+
+#navLigas ul li{
+	width: 148px;
+	height: 100%;
+	border-width: 1px;
+}
+
+#navTopicos, #navMasVotado{
+	display: none;
+}
+
+#footer{
+	background-position-x: 70px;
+}
+
+#monkey{
+	margin-left: 0;
+}
+
+#humanstxt{
+	margin-left: 10px;
+}
+
+#header, #section, #footer{
+	color: crimson !important;
+}
+
+}

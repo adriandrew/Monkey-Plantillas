@@ -1,0 +1,78 @@
+@media all and (min-width: 768px) and (max-width: 799px) {
+
+#principal{
+	width: 768px;
+}
+
+#headerContenido {
+	width: 100%;
+}
+
+#logo{
+	width: 100px;
+	height: 100px;
+	margin: 3px 0 0 5px;
+}
+
+#headerTexto{
+	width: 456px;
+	margin-left: 120px;
+}
+
+#navPrincipal ul#menu li {
+	width: 185.75px;
+}
+
+#navEquipos {
+	width: 100%;
+}
+
+#section{
+	position: relative;
+}
+
+#sectionSidebarIzquierda, #sectionContenido{
+	margin-top: 55px;
+}
+
+#sectionSidebarIzquierda{
+	width: 108px;
+	float: right;
+	margin-right: 0;
+}
+
+#sectionContenido{
+	margin-right: 10px;
+}
+
+#sectionSidebarDerecha{
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	height: 39px;
+	margin-bottom: 0;
+}
+
+#sectionSidebarDerecha h2{
+	display: none;
+}
+
+#navLigas{
+	height: 100%;
+}
+
+#navLigas ul li{
+	width: 94px;
+	height: 100%;
+	border-width: 1px;
+}
+
+#navTopicos, #navMasVotado{
+	display: none;
+}
+
+#header, #section, #footer{
+	color: yellow !important;
+}
+
+}
