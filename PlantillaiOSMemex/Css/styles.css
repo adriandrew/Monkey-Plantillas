@@ -84,7 +84,10 @@ p, ul, h1, h2, h3, h4, h5, h6{
 	/* Para efectos de prueba solamente 
 	background-color: #9E682A !important;*/
 	color: white !important; 
-	font-size: 30px;
+}
+
+#navPrincipal ul li:hover, #navEquipos ul li:hover{
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 #logo, #monkey{
@@ -164,7 +167,8 @@ p, ul, h1, h2, h3, h4, h5, h6{
 
 /* Menu y Submenu */
 #navPrincipal ul li:hover{
-
+	font-size: 20px;
+	border-color: transparent !important;
 }
 /* Termina Menu y Submenu */
 
