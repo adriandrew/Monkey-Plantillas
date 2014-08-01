@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Memex Monkey Inc.</title>
 
-	<link rel="icon" type="image/png" href="Images/favicon.png">
+	<link rel="icon" type="image/png" href="Images/logo.png">
 	<link rel="author" href="./humans.txt">
 	<link rel="stylesheet" type="text/css" href="Css/styles.css">
 	<link rel="stylesheet" type="text/css" href="Css/200-240.css">
@@ -23,31 +23,13 @@
 	<link rel="stylesheet" type="text/css" href="Css/1024-1080.css">
 	<link rel="stylesheet" type="text/css" href="Css/1080-1152.css">
 	<link rel="stylesheet" type="text/css" href="Css/1152-1200.css">
-	<!-- Css fancybox -->
-	<link rel="stylesheet" type="text/css" href="Fancybox/jquery.fancybox-1.3.4.css" media="screen">
 	
-    <!-- Bootstrap 
-    <link href="Css/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="Css/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
-    -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- jQuery-->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script>!window.jQuery && document.write('<script src="Js/jquery-1.4.3.min.js"><\/script>');</script>
 
-	<!-- jQuery para animated_bg -->
-	<script type="text/javascript" src="Js/jquery-ui.min.js"></script>
-
-	<!-- Fancybox -->
-	<script type="text/javascript" src="Fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<script type="text/javascript" src="Fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-
 	<!-- JavaScript -->
 	<script type="text/javascript" src="Js/scripts.js"></script>
-
-	<!-- Animated_bg -->
-	<script type="text/javascript" src="Js/animated_bg.js"></script>
 
 	<!-- Es para checar si es IE y añade el script HTML5SHIV para renderizar con HTML5 -->	
 	<!--[if lt IE 9]>
@@ -65,57 +47,40 @@
 	<![endif]-->
 </head>
 
-<!-- background="Images/color2.jpg" -->
-<!-- class="animated_bg" -->
 <body background="Images/color2.jpg">
 
 <div id="principal">
 
 <header id="header">
-
 	<div id="headerContenido">
-
-		<div id="logo"><a href="http://www.memex.net" title="Memex"></a></div> 
-
-			<div id="headerTexto">
-				<span><h1>MeMex</h1></span>
-			</div>
-			<div id="headerLogin">
-				
-			</div>
-			<!-- Musica -->			
-			<!--
-			<audio id="audio" src="Music/Bye bye.mp3" autoplay controls loop preload=auto>
-			</audio>
-			
-			<audio id="audio" src="Music/Wake me up when september ends (live).mp3" autoplay controls loop preload=auto>
-			</audio> 
-			-->
-			<!-- Termina Musica -->
-			<div id="headerCompartir">
-				<ul>
-					<li><a href="http://www.facebook.com" title="Facebook" id="facebook"></a></li>
-					<li><a href="http://www.twitter.com" title="Twitter" id="twitter"></a></li>
-					<li><a href="http://www.plus.google.com" title="Google+" id="googlePlus"></a></li>
-					<li><a href="http://www.instagram.com" title="Instagram" id="instagram"></a></li>
-				</ul>
-			</div> <!-- end #headerCompartir-->
-		
+		<a href="http://www.memex.net" title="Memex" id="logo">
+			<img src="Images/logo.png">
+		</a>
+		<div id="headerTexto">
+			<span><h1>MeMex</h1></span>
+		</div>
+		<div id="headerLogin"></div>
+		<div id="headerCompartir">
+			<ul>
+				<li><a href="http://www.facebook.com" title="Facebook" id="facebook"></a></li>
+				<li><a href="http://www.twitter.com" title="Twitter" id="twitter"></a></li>
+				<li><a href="http://www.plus.google.com" title="Google+" id="googlePlus"></a></li>
+				<li><a href="http://www.instagram.com" title="Instagram" id="instagram"></a></li>
+			</ul>
+		</div> <!-- end #headerCompartir-->
 	</div> <!-- end headerContenido -->
-
 </header>
 
 <section id="section">
-
 	<nav id="navPrincipal">
-			<ul id="menu">
-			 	<li><a href="#">Ahora</a>
-			 	</li>
-			 	<li><a class="frame" href="http://monkey.somee.com/PlantillaMemex/">Mejores</a></li>
-				<li><a class="frame" href="http://monkey.somee.com/CombustiblesMonkey/">Clasicos</a></li>
-				<li><a href="#" id="equipos">Equipos</a></li>
-			</ul>			
-		</nav><nav id="navEquipos">
+		<ul>
+			<li><a href="#" id="ahora">Ahora</a></li>
+			<li><a href="#" id="mejores">Mejores</a></li>
+			<li><a href="#" id="clasicos">Clasicos</a></li>
+			<li><a href="#" id="equipos">Equipos</a></li>
+		</ul>			
+	</nav>
+	<nav id="navEquipos">
 		<ul>
 			<li><a href="#" title="América" id="america"></a></li>
 			<li><a href="#" title="Atlante" id="atlante"></a></li>
@@ -137,11 +102,8 @@
 			<li><a href="#" title="Veracruz" id="veracruz"></a></li>
 		</ul>
 	</nav>
-
 	<section id="sectionSidebarIzquierda">
-	
 	</section>
-
 	<section id="sectionContenido">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -149,24 +111,21 @@
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
 	</section>
-
 	<section id="sectionSidebarDerecha">
 		<h2>Competiciones</h2>
 		<nav id="navLigas">
 			<ul>
-				<li><a href="#" title="Liga Mexicana" id="mexicana"></a></li>
-				<li><a href="#" title="Liga Española" id="española"></a></li>
-				<li><a href="#" title="Liga Premier" id="premier"></a></li>
-				<li><a href="#" title="UEFA Champions" id="champions"></a></li>
-				<li><a href="#" title="Libertadores" id="libertadores"></a></li>
+				<li><a href="#" title="Liga Mexicana"><img src="Images/Ligas/LogoMexico.png"></a></li>
+				<li><a href="#" title="Liga Española"><img src="Images/Ligas/LogoEspañola.png"></a></li>
+				<li><a href="#" title="Liga Premier"><img src="Images/Ligas/LogoPremier.png"></a></li>
+				<li><a href="#" title="UEFA Champions"><img src="Images/Ligas/LogoUEFA.png"></a></li>
+				<li><a href="#" title="Libertadores"><img src="Images/Ligas/LogoLibertadores.png"></a></li>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
 			</ul>
 		</nav>
-
 		<nav id="navTopicos">
 			<ul>
 				<li><a href="#"></a></li>
@@ -179,55 +138,21 @@
 				<li><a href="#"></a></li>
 			</ul>
 		</nav>
-
 		<nav id="navMasVotado">
-
 			<ul>
-	
 				<li><a href="#"></a></li>
-
 			</ul>
-
-
-<!-- Otro intento de musica -->
-	<!-- 
-			<audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
-        	<source type="audio/mp3" src="Music/Bye bye.mp3">
-        	Sorry, your browser does not support HTML5 audio.
-    	</audio>
-    		<ul id="playlist">
-        		<li class="active"><a href="Music/Bye bye.mp3"></a>Bye bye</li>
-        		
-        		<li><a href="Music/Wake me up when september ends (live).mp3">Wake me up</a></li>
-        		
-    	</ul>
-	-->
-<!-- end Otro intento de musica -->
-
 		</nav>
 	</section>
-
 </section>
 
 <footer id="footer">	
 	<aside id="asideIconos">
-		<!-- Es para el link normal de humanstxt-->
-		<div id="humanstxt"><a href="./humans.txt" target="_blank"></a></div> 
-
-		<div id="monkey"><a href="http://www.monkey.net" target="_blank"></a></div>
+		<a href="./humans.txt" target="_blank" id="humanstxt"><img src="Images/Tecnologias/humanstxt-bn.png"></a>
+		<a href="http://www.monkey.net" target="_blank" id="monkey"><img src="Images/monkey.png"></a>
 	</aside>
-
-	<aside id="asideEnlaces">
-		<p>Monkey Inc. Todos los Derechos Reservados.</p>		
-		<ul>
-			<li>Presidente: Aldo Adrian Andrew Lopez. </li>
-			<li>Director General: Daniel Hernandez Ramirez. </li>
-			<li>Desarrollador: Ian Jesus Huerta Rodriguez</li>
-			<li>Desarrollador: Omar Felix Vasquez</li>
-			<li>Desarrollador: Gustavo Enrique Lucero Gonzales</li>
-			<li>Desarrollador: Carlos Zamyr Sanchez Coronel</li>
-			<li>Disenador: Edgar Mendoza</li>
-		</ul> 
+	<aside id="asideFondo">
+		<img src="Images/map.png">
 	</aside>
 </footer>
 
