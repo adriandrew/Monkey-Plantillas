@@ -4,97 +4,48 @@ body{
 	font-size: 11px !important;
 }
 
-#principal{
+#headerContenido, #section, #footer{
 	width: 200px;
 }
 
-#header{
-	height: 80px;
-}
-
-#headerContenido {
-	width: 100%;
-	height: 80px;
-	margin-bottom: 5px;
-}
-
-#logo{
-	width: 40px;
-	height: 40px;
-	margin: 3px 0 0 5px;
-}
-
-#headerBarra{
-	height: 50px;
-}
-
-#headerTexto{
+#navEquipos, #sectionSidebarIzquierda, #sectionSidebarDerecha{
 	display: none;
 }
 
 #headerCompartir{
-	width: 150px;
-	height: 100%;
-}
-
-#headerCompartir ul li a{
-	background-size: contain;
-}
-
-#navPrincipal{
-	height: 30px;
-}
-
-#navPrincipal ul#menu li {
-	width: 47.5px;
-	margin-left: 2px;
-	line-height: 30px;
-}
-
-#navEquipos{
-	display: none;
-}
-
-#navEquipos ul li{
-	width: 11.111%;
+	clear: both;
 	height: 40px;
 }
 
-#sectionSidebarIzquierda{
-	display: none;
+#navPrincipal{
+	height: 30px;	
+}
+
+#navPrincipal ul li{
+	line-height: 30px;
+}
+
+#navPrincipal ul li:hover{
+	font-size: 12px;
+}
+
+#section{
+	height: 1040px;
 }
 
 #sectionContenido{
-	width: 100%;
+	width: auto;
 	margin: 0;
 	padding: 5px 0;
 }
 
-#sectionSidebarDerecha{
-	display: none;
-}
-
-#footer, #monkey, #humanstxt{
-	background-size: contain;
-}
-
 #footer{
-	height: 70px;
-	background-position: right center;
-}
-
-#monkey{
-	background-position: center; 
-	width: 60px;
-	height: 30px;
-	margin: 0;
-	border: 0;
+	height: 60px;
 }
 
 #humanstxt{
-	width: 50px;
-	height: 20px;
-	margin: 15px 0 0 5px;
+	width: 100%;
+	margin: 0;
 }
 
 #header, #section, #footer{

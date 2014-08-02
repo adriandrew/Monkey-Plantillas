@@ -97,6 +97,10 @@ img{
 	width: 25%;
 	height: 100%;
 }
+
+#headerCompartir ul li a{
+	background-size: cover;
+}
 /* ---------------------------- Termina Header -------------------------- */
 
 
