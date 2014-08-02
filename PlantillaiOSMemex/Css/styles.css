@@ -49,7 +49,7 @@ img{
 	margin: 0 auto; 
 }
 
-#header, #navPrincipal, #footer{
+#header, #section, #footer{
 	color: white;
 	color: #6e6e6e;
 }
@@ -103,8 +103,7 @@ img{
 /* ---------------------------- Section -------------------------- */
 #section{ 
 	height: 1090px;	
-	color: #6e6e6e; 
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.2);	
 }
 
 #sectionSidebarIzquierda, #sectionSidebarDerecha li{
@@ -178,6 +177,10 @@ img{
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0.5);
 }
+
+#sectionContenido:hover{
+	color: black;
+}
 /* Termina Section Contenido */
 
 /* Section Sidebar Derecha */
@@ -235,6 +238,7 @@ img{
 /* ---------------------------- Aside -------------------------- */
 #asideIconos, #asideFondo{
 	float: left;
+	height: 100%;
 }
 
 #asideIconos{
@@ -255,7 +259,13 @@ img{
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000,endColorstr=#CC000000);
 }
 
-
+/* Prueba para transparencia en IE */
+.transparenciaIE
+{
+   background: rgba(98, 135, 167, .4);
+   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#886287a7', endColorstr='#886287a7');
+   -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#886287a7', endColorstr='#886287a7');
+}
 
 
 

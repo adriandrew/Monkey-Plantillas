@@ -1,27 +1,15 @@
 @media all and (min-width: 1152px) and (max-width: 1199px) {
 
-#principal{
+#headerContenido, #section, #footer{
 	width: 1152px;
 }
 
-#logo{
-	width: 152px;
-}
-
-#headerContenido {
-	width: 975px;
-}
-
 #sectionSidebarIzquierda{
-	width: 152px;
+	width: 182px;	
 }
 
-#navPrincipal ul#menu li {
-	width: 237.5px;
-}
-
-#navEquipos {
-	width: 975px;
+#sectionSidebarIzquierda, #sectionContenido{
+	margin-right: 10px;
 }
 
 #header, #section, #footer{
