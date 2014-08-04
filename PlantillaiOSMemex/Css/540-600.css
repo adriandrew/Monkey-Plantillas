@@ -8,10 +8,6 @@
 	height: 40px;
 }
 
-#section{
-	height: 1080px;
-}
-
 #sectionSidebarIzquierda, #sectionSidebarDerecha{
 	display: none;
 }

@@ -101,12 +101,51 @@ img{
 #headerCompartir ul li a{
 	background-size: cover;
 }
+
+#navPrincipal, #navEquipos, #section{
+	clear: both;
+}
+
+/* Nav Principal */
+#navPrincipal{
+	height: 50px;
+	/* Gris con transparencia 
+	background-color: rgba(77, 76, 76, 0.56);*/
+	border-bottom: 1px groove white;
+}
+
+#navPrincipal ul li{
+	width: 25%;
+	line-height: 50px;
+}
+
+#navPrincipal ul li:hover{
+	color: white;
+	border-bottom: 1px solid white !important;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+/* Termina Nav Principal */
+
+/* Nav Equipos */
+#navEquipos{
+	height: 50px;
+}
+
+#navEquipos ul li{
+	width: 5.555%;
+}
+
+#navEquipos ul li:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+/* Termina Nav Equipos */
 /* ---------------------------- Termina Header -------------------------- */
 
 
 /* ---------------------------- Section -------------------------- */
 #section{ 
-	height: 1090px;	
+	height: 1000px;	
 	background-color: rgba(0, 0, 0, 0.2);	
 }
 
@@ -122,45 +161,6 @@ img{
 #sectionSidebarIzquierda, #sectionContenido, #sectionSidebarDerecha{
 	float: left;
 }
-
-/* Nav Principal */
-#navPrincipal{
-	height: 40px;
-	width: 100%;	
-	float: right;
-	/* Gris con transparencia 
-	background-color: rgba(77, 76, 76, 0.56);*/
-	border-bottom: 1px groove white;
-}
-
-#navPrincipal ul li{
-	width: 25%;
-	line-height: 40px;
-}
-
-#navPrincipal ul li:hover{
-	color: white;
-	border-bottom: 1px solid white !important;
-	font-size: 20px;
-	background-color: rgba(255, 255, 255, 0.1);
-}
-/* Termina Nav Principal */
-
-/* Nav Equipos */
-#navEquipos{
-	width: 100%;
-	height: 50px;
-	clear: both;
-}
-
-#navEquipos ul li{
-	width: 5.555%;
-}
-
-#navEquipos ul li:hover{
-	background-color: rgba(255, 255, 255, 0.1);
-}
-/* Termina Nav Equipos */
 
 /* Section Sidebar Izquierda */
 #sectionSidebarIzquierda{

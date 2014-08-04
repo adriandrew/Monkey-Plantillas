@@ -1,19 +1,22 @@
 @media all and (min-width: 720px) and (max-width: 767px) {
 
+#headerContenido{
+	position: relative;
+}
+
 #headerContenido, #section, #footer{
 	width: 720px;
 }
 
 #section{
-	position: relative;
-	height: 1080px;
+	height: 1037px;
 }
 
 #navEquipos{
 	width: 55px;
 	height: auto;
 	position: absolute;
-	top: 77px;
+	top: 137px;
 	right: 0;
 }
 
@@ -38,7 +41,6 @@
 	width: 100%;
 	height: 37px;
 	position: absolute;
-	top: 41px;
 }
 
 #sectionSidebarDerecha nav{

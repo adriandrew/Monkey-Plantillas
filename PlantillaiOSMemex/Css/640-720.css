@@ -6,7 +6,7 @@
 
 #section{
 	position: relative;
-	height: 1200px;
+	height: 1120px;
 }
 
 #sectionSidebarIzquierda, #sectionSidebarDerecha h2, #navTopicos, #navMasVotado{
@@ -34,7 +34,6 @@
 
 #sectionSidebarDerecha{
 	width: 100%;
-	height: 66px;
 	position: absolute;
 }
 

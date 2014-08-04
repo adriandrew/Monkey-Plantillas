@@ -29,6 +29,10 @@ body{
 	height: 50%;
 }
 
+#section{
+	height: 980px;
+}
+
 #sectionContenido{
 	width: auto;
 	margin-right: 0;

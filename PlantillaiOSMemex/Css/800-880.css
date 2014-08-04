@@ -5,8 +5,8 @@
 }
 
 #section{
+	height: 1041px;
 	position: relative;
-	height: 1130px;
 }
 
 #sectionSidebarIzquierda, #sectionContenido{
@@ -29,7 +29,7 @@
 	position: absolute;
 }
 
-#sectionSidebarDerecha h2{
+#sectionSidebarDerecha h2, #navTopicos, #navMasVotado{
 	display: none;
 }
 
@@ -44,10 +44,6 @@
 #navLigas ul li{
 	width: 100px;
 	height: 100%;
-}
-
-#navTopicos, #navMasVotado{
-	display: none;
 }
 
 #header, #section, #footer{

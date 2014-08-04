@@ -17,6 +17,10 @@ body{
 	height: 40px;
 }
 
+#headerCompartir ul li a{
+	background-position: inherit;
+}
+
 #navPrincipal{
 	height: 30px;	
 }
@@ -30,7 +34,7 @@ body{
 }
 
 #section{
-	height: 1040px;
+	height: 970px;
 }
 
 #sectionContenido{
