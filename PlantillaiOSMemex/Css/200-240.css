@@ -8,7 +8,7 @@ body{
 	width: 200px;
 }
 
-#navEquipos, #sectionSidebarIzquierda, #sectionSidebarDerecha{
+#navEquipos, #sectionIzquierda, #sectionDerecha{
 	display: none;
 }
 

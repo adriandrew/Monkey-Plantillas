@@ -4,7 +4,7 @@
 	width: 320px;
 }
 
-#headerTexto h1, #sectionSidebarIzquierda, #sectionSidebarDerecha{
+#headerTexto h1, #sectionIzquierda, #sectionDerecha{
 	display: none;
 }
 

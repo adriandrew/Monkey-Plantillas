@@ -4,11 +4,11 @@
 	width: 1152px;
 }
 
-#sectionSidebarIzquierda{
+#sectionIzquierda{
 	width: 182px;	
 }
 
-#sectionSidebarIzquierda, #sectionContenido{
+#sectionIzquierda, #sectionContenido{
 	margin-right: 10px;
 }
 

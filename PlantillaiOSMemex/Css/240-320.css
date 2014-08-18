@@ -8,7 +8,7 @@ body{
 	width: 240px;
 }
 
-#headerTexto, #sectionSidebarIzquierda, #sectionSidebarDerecha{
+#headerTexto, #sectionIzquierda, #sectionDerecha{
 	display: none;
 }
 

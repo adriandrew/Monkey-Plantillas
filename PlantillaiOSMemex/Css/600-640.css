@@ -9,7 +9,7 @@
 	height: 1120px;
 }
 
-#sectionSidebarIzquierda, #sectionSidebarDerecha h2, #navTopicos, #navMasVotado{
+#sectionIzquierda, #sectionDerecha h2, #navTopicos, #navMasVotado{
 	display: none;
 }
 
@@ -32,12 +32,12 @@
 	padding: 20px 0;
 }
 
-#sectionSidebarDerecha{
+#sectionDerecha{
 	width: 100%;
 	position: absolute;
 }
 
-#sectionSidebarDerecha nav{
+#sectionDerecha nav{
 	margin-bottom: 0;
 }
 

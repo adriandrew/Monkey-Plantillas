@@ -75,6 +75,9 @@ img{
 	background: black; 
 	background: rgba(0, 0, 0, 0.5);
 	border-bottom: 1px solid black;
+
+	background-image: url("../images/bg.jpg");
+	background-position: top;
 }
 
 #headerContenido{
@@ -124,7 +127,9 @@ img{
 	border-bottom: 1px solid white !important;
 	font-size: 20px;
 	background-color: rgba(255, 255, 255, 0.1);
+	transition: .5s;
 }
+
 /* Termina Nav Principal */
 
 /* Nav Equipos */
@@ -149,27 +154,27 @@ img{
 	background-color: rgba(0, 0, 0, 0.2);	
 }
 
-#sectionSidebarIzquierda, #sectionSidebarDerecha li{
+#sectionIzquierda, #sectionDerecha li{
 	background-color: black; 
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-#sectionSidebarIzquierda:hover, #sectionSidebarDerecha li:hover{
+#sectionIzquierda:hover, #sectionDerecha li:hover{
 	background-color: white;
 }
 
-#sectionSidebarIzquierda, #sectionContenido, #sectionSidebarDerecha{
+#sectionIzquierda, #sectionContenido, #sectionDerecha{
 	float: left;
 }
 
-/* Section Sidebar Izquierda */
-#sectionSidebarIzquierda{
+/* Section Izquierda */
+#sectionIzquierda{
 	width: 200px;
 	height: 1000px;
 	margin-right: 25px;
 	clear: both;
 }
-/* Termina Section Sidebar Izquierda */
+/* Termina Section Izquierda */
 
 /* Section Contenido */
 #sectionContenido{
@@ -187,13 +192,13 @@ img{
 }
 /* Termina Section Contenido */
 
-/* Section Sidebar Derecha */
-#sectionSidebarDerecha{
+/* Section Derecha */
+#sectionDerecha{
 	width: 300px;
 	max-height: 1000px;
 }
 
-#sectionSidebarDerecha nav{
+#sectionDerecha nav{
 	margin-bottom: 10px;
 }
 
@@ -227,7 +232,7 @@ img{
 #navMasVotado ul li{
 	width: 100%;
 }
-/* Termina Section Sidebar Derecha */
+/* Termina Section Derecha */
 /* ---------------------------- Termina Section -------------------------- */
 
 /* ---------------------------- Footer -------------------------- */

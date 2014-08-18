@@ -9,11 +9,11 @@
 	position: relative;
 }
 
-#sectionSidebarIzquierda, #sectionContenido{
+#sectionIzquierda, #sectionContenido{
 	margin-top: 45px;
 }
 
-#sectionSidebarIzquierda{
+#sectionIzquierda{
 	width: 220px;
 	float: right;
 	margin-right: 0;
@@ -23,17 +23,17 @@
 	margin-right: 10px;
 }
 
-#sectionSidebarDerecha{
+#sectionDerecha{
 	width: 100%;
 	height: 45px;
 	position: absolute;
 }
 
-#sectionSidebarDerecha h2, #navTopicos, #navMasVotado{
+#sectionDerecha h2, #navTopicos, #navMasVotado{
 	display: none;
 }
 
-#sectionSidebarDerecha nav{
+#sectionDerecha nav{
 	margin-bottom: 0;
 }
 
