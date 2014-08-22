@@ -1,0 +1,29 @@
+/**
+ * Productivity: Icon Pack
+ *
+ * URL: http://designinstruct.com/free-resources/icons/productivity-icon-pack/
+ *
+ * This downloadable freebie source file package includes 9
+ * icons in various dimensions (32x32px, 48x48px, 128x128px, 256x256px, 512x512px
+ *
+ * You MAY use the source files in this package for commercial
+ * purposes.
+ *
+ * You MAY NOT redistribute or sell the source files in this package.
+ *
+ * Design Instruct (designinstruct.com)
+ *
+ * LICENSE: This source file package is subject to the
+ * Design Instruct Downloadable Freebie Files Usage Terms
+ * that is viewable through the following URL:
+ * http://designinstruct.com/freebie-usage-terms/
+ *
+ * Author     Thomas McGee
+
+
+ * Author     Design Instruct
+ * Copyright  Thomas McGee
+
+ and Design Instruct
+ * License    http://designinstruct.com/freebie-usage-terms/
+ */

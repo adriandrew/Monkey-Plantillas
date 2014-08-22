@@ -1,4 +1,7 @@
-﻿<html lang="es"><head>
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<!-- Deshabilita la escala inicial del iPhone -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +27,9 @@
 	<link rel="stylesheet" type="text/css" href="Css/1080-1152.css">
 	<link rel="stylesheet" type="text/css" href="Css/1152-1200.css">
 
+	<!-- JavaScript -->
+	<script type="text/javascript" src="Js/scripts.js"></script>
+
 	<!-- Es para checar si es IE y añade el script HTML5SHIV para renderizar con HTML5 -->	
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,114 +43,118 @@
 
 <body background="Images/color2.jpg">
 
-<div id="principal">
+	<div id="principal">
 
-<header id="header">
-	<div id="headerContenido">
-		<a href="http://www.memex.net" title="Memex" id="logo">
-			<img src="Images/logo.png">
-		</a>
-		<div id="headerTexto">
-			<h1>MeMex</h1>
-		</div>
-		<div id="headerLogin"></div>
-		<div id="headerCompartir">
-			<ul>
-				<li><a href="http://www.facebook.com" title="Facebook" id="facebook"></a></li>
-				<li><a href="http://www.twitter.com" title="Twitter" id="twitter"></a></li>
-				<li><a href="http://www.plus.google.com" title="Google+" id="googlePlus"></a></li>
-				<li><a href="http://www.instagram.com" title="Instagram" id="instagram"></a></li>
-			</ul>
-		</div> <!-- end headerCompartir -->
-		<nav id="navPrincipal">
-			<ul>
-				<li><a href="#" id="ahora">Ahora</a></li>
-				<li><a href="#" id="mejores">Mejores</a></li>
-				<li><a href="#" id="clasicos">Clasicos</a></li>
-				<li><a href="#" id="equipos">Equipos</a></li>
-			</ul> 
-		</nav> <!-- end navPrincipal -->
-		<!-- busqueda 
-		<input type="search" id="busqueda" placeholder="Buscar">
-		-->
-		<nav id="navEquipos">
-			<ul>
-				<li><a href="#" title="América" id="america"></a></li>
-				<li><a href="#" title="Atlante" id="atlante"></a></li>
-				<li><a href="#" title="Atlas" id="atlas"></a></li>
-				<li><a href="#" title="Chiapas" id="chiapas"></a></li>
-				<li><a href="#" title="Cruz Azul" id="cruzAzul"></a></li>
-			    <li><a href="#" title="Guadalajara" id="guadalajara"></a></li>
-				<li><a href="#" title="León" id="leon"></a></li>
-				<li><a href="#" title="Monterrey" id="monterrey"></a></li>
-				<li><a href="#" title="Morelia" id="morelia"></a></li>
-				<li><a href="#" title="Pachuca" id="pachuca"></a></li>
-				<li><a href="#" title="Puebla" id="puebla"></a></li>
-				<li><a href="#" title="Pumas" id="pumas"></a></li>
-				<li><a href="#" title="Querétaro" id="queretaro"></a></li>
-				<li><a href="#" title="Santos" id="santos"></a></li>
-				<li><a href="#" title="Tigres" id="tigres"></a></li>
-				<li><a href="#" title="Tijuana" id="tijuana"></a></li>
-				<li><a href="#" title="Toluca" id="toluca"></a></li>
-				<li><a href="#" title="Veracruz" id="veracruz"></a></li>
-			</ul>
-		</nav> <!-- end navEquipos -->
-	</div> <!-- end headerContenido -->
-</header>
+	<header id="header">
+		<div id="headerContenido">
+			<a href="http://www.memex.net" title="Memex" id="logo">
+				<img src="Images/logo.png">
+			</a>
+			<div id="headerTexto">
+				<h1>MeMex</h1>
+			</div>
+			<div id="headerLogin"></div>
+			<div id="headerCompartir">
+				<ul>
+					<li><a href="http://www.facebook.com" title="Facebook" id="facebook"></a></li>
+					<li><a href="http://www.twitter.com" title="Twitter" id="twitter"></a></li>
+					<li><a href="http://www.plus.google.com" title="Google+" id="googlePlus"></a></li>
+					<li><a href="http://www.instagram.com" title="Instagram" id="instagram"></a></li>
+				</ul>
+			</div> <!-- end headerCompartir -->
+			<nav id="navPrincipal">
+				<ul>
+					<li><a href="#" id="ahora">Ahora</a></li>
+					<li><a href="#" id="mejores">Mejores</a></li>
+					<li><a href="#" id="clasicos">Clasicos</a></li>
+					<li><a href="#" id="equipos" onclick="MuestraOculta('navEquipos')">Equipos</a></li>
+				</ul> 
+			</nav> <!-- end navPrincipal -->
+			<!-- busqueda 
+			<input type="search" id="busqueda" placeholder="Buscar">
+			-->
+			<nav id="navEquipos">
+				<ul>
+					<li><a href="#" title="América" id="america"></a></li>
+					<li><a href="#" title="Atlante" id="atlante"></a></li>
+					<li><a href="#" title="Atlas" id="atlas"></a></li>
+					<li><a href="#" title="Chiapas" id="chiapas"></a></li>
+					<li><a href="#" title="Cruz Azul" id="cruzAzul"></a></li>
+				    <li><a href="#" title="Guadalajara" id="guadalajara"></a></li>
+					<li><a href="#" title="León" id="leon"></a></li>
+					<li><a href="#" title="Monterrey" id="monterrey"></a></li>
+					<li><a href="#" title="Morelia" id="morelia"></a></li>
+					<li><a href="#" title="Pachuca" id="pachuca"></a></li>
+					<li><a href="#" title="Puebla" id="puebla"></a></li>
+					<li><a href="#" title="Pumas" id="pumas"></a></li>
+					<li><a href="#" title="Querétaro" id="queretaro"></a></li>
+					<li><a href="#" title="Santos" id="santos"></a></li>
+					<li><a href="#" title="Tigres" id="tigres"></a></li>
+					<li><a href="#" title="Tijuana" id="tijuana"></a></li>
+					<li><a href="#" title="Toluca" id="toluca"></a></li>
+					<li><a href="#" title="Veracruz" id="veracruz"></a></li>
+				</ul>
+			</nav> <!-- end navEquipos -->
+		</div> <!-- end headerContenido -->
+	</header>
 
-<section id="section">
-	<section id="sectionIzquierda">
+	<section id="section">
+		<section id="sectionIzquierda">
+		</section>
+		<section id="sectionContenido">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section id="sectionDerecha">
+			<h2>Competiciones</h2>
+			<nav id="navCompeticiones">
+				<ul>
+					<li><a href="#" title="Liga Mexicana"><img src="Images/Ligas/LogoMexico.png"></a></li>
+					<li><a href="#" title="Liga Española"><img src="Images/Ligas/LogoEspañola.png"></a></li>
+					<li><a href="#" title="Liga Premier"><img src="Images/Ligas/LogoPremier.png"></a></li>
+					<li><a href="#" title="UEFA Champions"><img src="Images/Ligas/LogoUEFA.png"></a></li>
+					<li><a href="#" title="Libertadores"><img src="Images/Ligas/LogoLibertadores.png"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</nav>
+			<nav id="navTopicos">
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</nav>
+			<nav id="navMasVotado">
+				<ul>
+					<li><a href="#"></a></li>
+				</ul>
+			</nav>
+		</section>
 	</section>
-	<section id="sectionContenido">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-	<section id="sectionDerecha">
-		<h2>Competiciones</h2>
-		<nav id="navLigas">
-			<ul>
-				<li><a href="#" title="Liga Mexicana"><img src="Images/Ligas/LogoMexico.png"></a></li>
-				<li><a href="#" title="Liga Española"><img src="Images/Ligas/LogoEspañola.png"></a></li>
-				<li><a href="#" title="Liga Premier"><img src="Images/Ligas/LogoPremier.png"></a></li>
-				<li><a href="#" title="UEFA Champions"><img src="Images/Ligas/LogoUEFA.png"></a></li>
-				<li><a href="#" title="Libertadores"><img src="Images/Ligas/LogoLibertadores.png"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-			</ul>
-		</nav>
-		<nav id="navTopicos">
-			<ul>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-			</ul>
-		</nav>
-		<nav id="navMasVotado">
-			<ul>
-				<li><a href="#"></a></li>
-			</ul>
-		</nav>
-	</section>
-</section>
 
-<footer id="footer">	
-	<aside id="asideIconos">
-		<a href="./humans.txt" target="_blank" id="humanstxt"><img src="Images/Tecnologias/humanstxt-bn.png"></a>
-		<a href="http://www.monkey.net" target="_blank" id="monkey"><img src="Images/monkey.png"></a>
-	</aside>
-	<aside id="asideFondo">
-		<img src="Images/map.png">
-	</aside>
-</footer>
+	<footer id="footer">	
+		<aside id="asideIconos">
+			<a href="./humans.txt" target="_blank" id="humanstxt"><img src="Images/Tecnologias/humanstxt-bn.png"></a>
+			<a href="http://www.monkey.net" target="_blank" id="monkey"><img src="Images/monkey.png"></a>
+		</aside>
+		<aside id="asideFondo">
+			<img src="Images/map.png">
+		</aside>
+	</footer>
 
-</div> <!-- Termina Principal -->
+	</div> <!-- Termina Principal -->
+
+</body>
+
+</html>
