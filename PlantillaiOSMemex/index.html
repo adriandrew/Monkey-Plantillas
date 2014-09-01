@@ -29,6 +29,8 @@
 
 	<!-- JavaScript -->
 	<script type="text/javascript" src="Js/scripts.js"></script>
+	<!-- Hermoso modernizr! me saco de apuros con el puto HTML5 en IE. TODO PENDIENTE PONER EL ROBOTS.TXT-->
+	<script type="text/javascript" src="Js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
 	<!-- Es para checar si es IE y añade el script HTML5SHIV para renderizar con HTML5 -->	
 	<!--[if lt IE 9]>
@@ -42,6 +44,10 @@
 </head>
 
 <body background="Images/color2.jpg">
+
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+	<![endif]-->
 
 	<div id="principal">
 
@@ -66,7 +72,7 @@
 				<ul>
 					<li><a href="#" id="ahora">Ahora</a></li>
 					<li><a href="#" id="mejores">Mejores</a></li>
-					<li><a href="#" id="clasicos">Clasicos</a></li>
+					<li><a href="#" id="clasicos" onclick="MuestraOculta('navCompeticiones')">Competiciones</a></li>
 					<li><a href="#" id="equipos" onclick="MuestraOculta('navEquipos')">Equipos</a></li>
 				</ul> 
 			</nav> <!-- end navPrincipal -->
@@ -154,6 +160,13 @@
 	</footer>
 
 	</div> <!-- Termina Principal -->
+
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
 
 </body>
 
